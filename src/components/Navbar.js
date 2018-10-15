@@ -1,40 +1,166 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import {pushRotate as Menu} from "react-burger-menu";
 import github from '../img/github-icon.svg'
 import logo from '../img/DL.png'
 
-const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
-        </Link>
+const styles = {
+  bmBurgerButton: {
+    position: "fixed",
+    width: "26px",
+    height: "15px",
+    right: "20px",
+    top: "20px"
+  },
+  bmBurgerBars: {
+    background: "#373a47"
+  },
+  bmCrossButton: {
+    height: "24px",
+    width: "24px"
+  },
+  bmCross: {
+    background: "#777777"
+  },
+  bmMenu: {
+    background: "#e0e0e0",
+    padding: "2.5em 1.5em 0",
+    fontSize: "1.15em"
+  },
+  bmMorphShape: {
+    fill: "#373a47"
+  },
+  bmItemList: {
+    color: "#b8b7ad",
+    padding: "0.8em"
+  },
+  bmOverlay: {
+    background: "rgba(0, 0, 0, 0.6)"
+  }
+};
+
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuOpen: false
+    };
+  }
+
+  // This keeps state in sync with the opening/closing of the menu via the default
+  // means, e.g. clicking the X, pressing the ESC key etc.
+  handleStateChange(state) {
+    this.setState({menuOpen: state.isOpen});
+  }
+
+  // This can be used to close the menu, e.g. when a user clicks a menu item
+  closeMenu() {
+    this.setState({menuOpen: false});
+  }
+
+  // This can be used to toggle the menu, e.g. when using a custom icon Tip: You
+  // probably want to hide either/both default icons if using a custom icon See
+  // https://github.com/negomi/react-burger-menu#custom-icons
+  toggleMenu() {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    });
+  }
+
+
+render() {
+    return (
+      <div className="is-hidden-desktop">
+        <Menu
+          styles={styles}
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-container"}
+          right
+          isOpen={this.state.menuOpen}
+          onStateChange={state => this.handleStateChange(state)}>
+          <aside className="menu">
+            <Link id="home" to="/" onClick={() => this.closeMenu()}>
+              <i className="fas fa-home"/>{" "}
+            </Link>
+
+            <p className="menu-label">General</p>
+            <ul className="menu-list">
+              <li>
+                <Link id="about" to="/about" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-user"/>{" "}
+                  About Me
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-cogs"/>{" "}
+                  Projects
+                </Link>
+              </li>
+            </ul>
+            <Link to="/blog" className="menu-label" onClick={() => this.closeMenu()}>
+              Blog
+            </Link>
+            <ul className="menu-list">
+              <li>
+                <Link to="/" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-fighter-jet"/>{" "}
+                  Professional
+                </Link>
+              </li>
+              <li>
+                <Link to="/" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-users"/>{" "}
+                  Family
+                </Link>
+              </li>
+              <li>
+                <Link to="/" onClick={() => this.closeMenu()}>
+                  Invitations
+                </Link>
+              </li>
+            </ul>
+            <Link to="/resume" className="menu-label">Resume</Link>
+            <ul className="menu-list">
+              <li>
+                <Link to="/resume/education" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-graduation-cap"/>{" "}
+                  Education
+                </Link>
+              </li>
+              <li>
+                <Link to="/resume/experience" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-briefcase"/>{" "}
+                  Experience
+                </Link>
+              </li>
+              <li>
+                <Link to="/" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-chart-line"/>{" "}
+                  Skills
+                </Link>
+              </li>
+            </ul>
+            <ul className="menu-list">
+              <li>
+                <Link id="contact" to="/contact" onClick={() => this.closeMenu()}>
+                  <i className="fas fa-envelope"/>{" "}
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </aside>
+          <footer className="footer has-background-grey-lighter">
+            <div className="content has-text-centered">
+              <i className="fas fa-download"/>{" "}
+              <h6>Resume</h6>
+            </div>
+          </footer>
+        </Menu>
       </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/Darinlevesque/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
-      </div>
-    </div>
-  </nav>
-)
+    );
+  }
+}
+
 
 export default Navbar
