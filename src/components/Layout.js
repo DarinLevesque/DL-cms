@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children }) => (
       <main className="site" id="page-wrap">
         <div className="site-content">
           <Header />
-          <div>{children()}</div>
+          <div>{children}</div>
         </div>
         <Footer />
       </main>
