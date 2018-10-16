@@ -41,11 +41,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Darin Levesque`,
+        short_name: `Darin`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#fcfcfc`,
+        theme_color: `#09c9ef`,
         display: `minimal-ui`,
         icon: `src/img/icon.png`, // This path is relative to the root of the site.
       },
