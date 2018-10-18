@@ -33,7 +33,7 @@ export const BlogPostTemplate = ({
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
-                      <span class="tag">
+                      <span class="tag is-rounded">
                         <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                       </span>
                     </li>
