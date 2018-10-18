@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import {pushRotate as Menu} from "react-burger-menu";
+import Headroom from "react-headroom";
 import github from '../img/github-icon.svg'
 import logo from '../img/DL.png'
 
@@ -71,92 +72,94 @@ class Navbar extends React.Component {
 render() {
     return (
       <div className="is-hidden-desktop">
-        <Menu
-          styles={styles}
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-container"}
-          right
-          isOpen={this.state.menuOpen}
-          onStateChange={state => this.handleStateChange(state)}>
-          <aside className="menu">
-            <Link id="home" to="/" onClick={() => this.closeMenu()}>
-              <i className="fas fa-home"/>{" "}
-            </Link>
+        <Headroom>
+          <Menu
+            styles={styles}
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+            right
+            isOpen={this.state.menuOpen}
+            onStateChange={state => this.handleStateChange(state)}>
+            <aside className="menu">
+              <Link id="home" to="/" onClick={() => this.closeMenu()}>
+                <i className="fas fa-home"/>{" "}
+              </Link>
 
-            <p className="menu-label">General</p>
-            <ul className="menu-list">
-              <li>
-                <Link id="about" to="/about" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-user"/>{" "}
-                  About Me
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-cogs"/>{" "}
-                  Projects
-                </Link>
-              </li>
-            </ul>
-            <Link to="/blog" className="menu-label" onClick={() => this.closeMenu()}>
-              Blog
-            </Link>
-            <ul className="menu-list">
-              <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-fighter-jet"/>{" "}
-                  Professional
-                </Link>
-              </li>
-              <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-users"/>{" "}
-                  Family
-                </Link>
-              </li>
-              <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
-                  Invitations
-                </Link>
-              </li>
-            </ul>
-            <Link to="/resume" className="menu-label">Resume</Link>
-            <ul className="menu-list">
-              <li>
-                <Link to="/resume/education" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-graduation-cap"/>{" "}
-                  Education
-                </Link>
-              </li>
-              <li>
-                <Link to="/resume/experience" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-briefcase"/>{" "}
-                  Experience
-                </Link>
-              </li>
-              <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-chart-line"/>{" "}
-                  Skills
-                </Link>
-              </li>
-            </ul>
-            <ul className="menu-list">
-              <li>
-                <Link id="contact" to="/contact" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-envelope"/>{" "}
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </aside>
-          <footer className="footer has-background-grey-lighter">
-            <div className="content has-text-centered">
-              <i className="fas fa-download"/>{" "}
-              <h6>Resume</h6>
-            </div>
-          </footer>
-        </Menu>
+              <p className="menu-label">General</p>
+              <ul className="menu-list">
+                <li>
+                  <Link id="about" to="/about" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-user"/>{" "}
+                    About Me
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/projects" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-cogs"/>{" "}
+                    Projects
+                  </Link>
+                </li>
+              </ul>
+              <Link to="/blog" className="menu-label" onClick={() => this.closeMenu()}>
+                Blog
+              </Link>
+              <ul className="menu-list">
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-fighter-jet"/>{" "}
+                    Professional
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-users"/>{" "}
+                    Family
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    Invitations
+                  </Link>
+                </li>
+              </ul>
+              <Link to="/resume" className="menu-label">Resume</Link>
+              <ul className="menu-list">
+                <li>
+                  <Link to="/resume/education" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-graduation-cap"/>{" "}
+                    Education
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/resume/experience" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-briefcase"/>{" "}
+                    Experience
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-chart-line"/>{" "}
+                    Skills
+                  </Link>
+                </li>
+              </ul>
+              <ul className="menu-list">
+                <li>
+                  <Link id="contact" to="/contact" onClick={() => this.closeMenu()}>
+                    <i className="fas fa-envelope"/>{" "}
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </aside>
+            <footer className="footer has-background-grey-lighter">
+              <div className="content has-text-centered">
+                <i className="fas fa-download"/>{" "}
+                <h6>Resume</h6>
+              </div>
+            </footer>
+          </Menu>
+        </Headroom>
       </div>
     );
   }
