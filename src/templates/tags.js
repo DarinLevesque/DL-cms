@@ -8,11 +8,9 @@ class TagRoute extends React.Component {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
         <li key={post.node.fields.slug}>
-        <span class="tag is-dark">
           <Link to={post.node.fields.slug}>
             <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
           </Link>
-        </span>
       </li>
     ))
     const tag = this.props.pageContext.tag
