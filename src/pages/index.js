@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Typed from '../components/Typed'
+import Profile from "../img/Darin.jpg"
 
 export default class IndexPage extends React.Component {
   render() {
