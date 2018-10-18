@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="content has-text-centered">
+        <div className="content">
           <nav className="level is-mobile">
             <div className="level-item has-text-centered">
               <span className="icon is-medium">
