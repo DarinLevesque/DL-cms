@@ -37,24 +37,30 @@ const Footer = () => {
               </span>
             </div>
           </nav>
-          <p>
-            <strong>Digital Resume</strong>
-            by{" "}
-            <Link to="/">Darin Levesque</Link>. The source code is licensed{" "}
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br/>
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-              <img
-                alt="Creative Commons License"
-                style={{
-                borderWidth: 0
-              }}
-                src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/>
-            </a>
-            <br/>This work is licensed under a{" "}
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-              Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-            </a>.
-          </p>
+          <div class="columns is-mobile">
+            <div class="column">1</div>
+            <div class="column">2</div>
+            <div class="column">
+            <p>
+              <strong>Digital Resume</strong>
+              by{" "}
+              <Link to="/">Darin Levesque</Link>. The source code is licensed{" "}
+              <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br/>
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                <img
+                  alt="Creative Commons License"
+                  style={{
+                  borderWidth: 0
+                }}
+                  src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/>
+              </a>
+              <br/>This work is licensed under a{" "}
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+              </a>.
+            </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
