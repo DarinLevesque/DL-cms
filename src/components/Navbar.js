@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import {pushRotate as Menu} from "react-burger-menu";
-import Headroom from "react-headroom";
+import {pushRotate as Menu} from "react-burger-menu"
 import github from '../img/github-icon.svg'
 import logo from '../img/DL.png'
 
@@ -72,8 +71,7 @@ class Navbar extends React.Component {
 render() {
     return (
       <div className="is-hidden-desktop">
-        <Headroom>
-          <Menu
+        <Menu
             styles={styles}
             pageWrapId={"page-wrap"}
             outerContainerId={"outer-container"}
@@ -159,7 +157,6 @@ render() {
               </div>
             </footer>
           </Menu>
-        </Headroom>
       </div>
     );
   }
