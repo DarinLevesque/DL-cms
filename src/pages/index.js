@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import PageTransition from 'gatsby-plugin-page-transitions'
 //import Typed from '../components/Typed'
 import Profile from "../img/Darin.jpg"
 
@@ -10,7 +9,6 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <PageTransition>
           <section className="hero is-medium is-dark is-bold">
             <div className="hero-body">
               <div className="container">
@@ -96,7 +94,6 @@ export default class IndexPage extends React.Component {
               <div className="columns"></div>
             </div>
           </section>
-        </PageTransition>
       </Layout>
     )
   }
