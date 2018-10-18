@@ -21,7 +21,14 @@ const TagsPage = ({
               {group.map(tag => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    <span class="tag is-rounded">{tag.fieldValue} ({tag.totalCount})</span>
+                    <div class="field is-grouped is-grouped-multiline">
+                      <div class="control">
+                        <div class="tags has-addons">
+                          <span class="tag is-dark">{tag.fieldValue}</span>
+                          <span class="tag is-info">{tag.totalCount}</span>
+                        </div>
+                      </div>
+                    </div>
                   </Link>
                 </li>
               ))}
