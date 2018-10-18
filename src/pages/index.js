@@ -8,7 +8,7 @@ import Profile from "../img/Darin.jpg"
 export default class IndexPage extends React.Component {
   render() {
     return (
-      <div>
+      <Layout>
         <section className="hero is-medium is-dark is-bold">
           <div className="hero-body">
             <div className="container">
@@ -94,7 +94,7 @@ export default class IndexPage extends React.Component {
             <div className="columns"></div>
           </div>
         </section>
-      </div>
+      </Layout>
     )
   }
 }
