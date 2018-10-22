@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import 404img from '../img/404.png'
+import {404img} from '../img/404.png'
 
 const NotFoundPage = () => (
   <Layout>
