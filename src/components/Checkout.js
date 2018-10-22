@@ -58,7 +58,7 @@ const Checkout = class extends React.Component {
       amount: amount,
       description: "A product well worth your time",
       token: token => {
-        fetch(`AWS_LAMBDA_URL`, {
+        fetch(`/.netlify/functions/checkout`, {
           method: "POST",
           mode: "no-cors",
           body: JSON.stringify({
