@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 //import Typed from '../components/Typed'
 import Profile from "../img/Darin.jpg"
+import Checkout from '../components/Checkout'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -90,8 +91,10 @@ export default class IndexPage extends React.Component {
                 </footer>
               </div>
             </div>
-            <div className="column"></div>
-            <div className="columns"></div>
+            <div className="column is-one-third">Donate 
+              <Checkout />
+            </div>
+            <div className="columnis-one-third"></div>
           </div>
         </section>
       </Layout>
