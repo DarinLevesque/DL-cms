@@ -20,6 +20,7 @@ module.exports = {
         name: 'images',
       },
     },
+    "gatsby-plugin-stripe-checkout",
     `gatsby-transformer-sharp`,
     'gatsby-plugin-sharp',
     {
