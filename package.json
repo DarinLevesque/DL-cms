@@ -29,9 +29,10 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-burger-menu": "^2.5.4",
-    "react-headroom": "^2.2.2",
     "react-dom": "^16.4.1",
+    "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",
+    "react-obfuscate": "^2.1.10",
     "typeit": "^5.10.7",
     "uuid": "^3.2.1"
   },

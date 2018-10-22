@@ -10,7 +10,7 @@ const Contact = () => {
                         <div class="field">
                             <label class="label">Name</label>
                             <div class="control">
-                                <input class="input" type="text" placeholder="Text input"/></div>
+                                <input class="input" type="text" placeholder="Text input" /></div>
                         </div>
 
                         <div class="field">
@@ -20,7 +20,7 @@ const Contact = () => {
                                     class="input is-success"
                                     type="text"
                                     placeholder="Text input"
-                                    value="bulma"/>
+                                    value="bulma" />
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-user"></i>
                                 </span>
@@ -38,7 +38,7 @@ const Contact = () => {
                                     class="input is-danger"
                                     type="email"
                                     placeholder="Email input"
-                                    value="hello@"/>
+                                    value="hello@" />
                                 <span class="icon is-small is-left">
                                     <i class="fas fa-envelope"></i>
                                 </span>
@@ -71,7 +71,7 @@ const Contact = () => {
                         <div class="field">
                             <div class="control">
                                 <label class="checkbox">
-                                    <input type="checkbox"/>
+                                    <input type="checkbox" />
                                     I agree to the{" "}
                                     <a href="#">terms and conditions</a>
                                 </label>
@@ -81,11 +81,11 @@ const Contact = () => {
                         <div class="field">
                             <div class="control">
                                 <label class="radio">
-                                    <input type="radio" name="question"/>
+                                    <input type="radio" name="question" />
                                     Yes
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="question"/>
+                                    <input type="radio" name="question" />
                                     No
                                 </label>
                             </div>
