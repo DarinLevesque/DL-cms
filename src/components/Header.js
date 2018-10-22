@@ -60,7 +60,7 @@ const Header = () => {
             </div>
             <div>
               <Link to="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
-                <img src={github} />
+                <img src={github} alt="github icon" />
               </Link>
             </div>
           </div>

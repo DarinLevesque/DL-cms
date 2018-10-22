@@ -52,7 +52,7 @@ const Footer = () => {
                 <div class="tel">Tel: <Obfuscate tel="603-326-8667" /></div>
               </address>
             </div>
-            <div className="column is-one-third">
+            <div className="column is-one-third has-text-centered">
               <p>
                 <strong>Digital Resume</strong> by{" "}
                 <Link to="/">Darin Levesque</Link>. The source code is licensed{" "}

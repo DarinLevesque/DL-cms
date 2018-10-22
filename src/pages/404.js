@@ -6,11 +6,11 @@ const NotFoundPage = () => (
   <Layout>
     <div className="columns">
       <div className="column">
-        <img src={FourOFour} alt="404 error image" />
+        <img src={FourOFour} alt="404 error" />
       </div>
       <div className="column">
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <h1>NOT FOUND</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       </div>
     </div>
   </Layout>

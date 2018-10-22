@@ -23,7 +23,7 @@ export default class IndexPage extends React.Component {
                 <div className="media-content column is-one-half">
                   <h1 className="title">Who am I?</h1>
                   <h2 className="subtitle">
-                  {/*<Typed
+                    {/*<Typed
                       strings={["Hi, my name is Darin.", "I'm a Test Resource Manager for NAVAIR"]}
                       startDelay={2500}
                       nextStringDelay={[2500, 2000]}
@@ -67,37 +67,39 @@ export default class IndexPage extends React.Component {
           <div className="container is-widescreen"></div>
         </section>
         <section className="section">
-          <div className="columns">
-            <div className="column is-one-third">
-              <div className="card">
-                <div className="card-content">
-                  <p className="title">
-                    "Quotes from Twitter"
+          <div className="container is-widescreen">
+            <div className="columns">
+              <div className="column is-one-third">
+                <div className="card">
+                  <div className="card-content">
+                    <p className="title">
+                      "Quotes from Twitter"
                     </p>
-                  <p className="subtitle">
-                    Author
+                    <p className="subtitle">
+                      Author
                     </p>
-                </div>
-                <footer className="card-footer">
-                  <p className="card-footer-item">
-                    <span>
-                      View on
+                  </div>
+                  <footer className="card-footer">
+                    <p className="card-footer-item">
+                      <span>
+                        View on
                         <a href="https://twitter.com/darinlevesque">Twitter</a>
-                    </span>
-                  </p>
-                  <p className="card-footer-item">
-                    Share
+                      </span>
                     </p>
-                </footer>
+                    <p className="card-footer-item">
+                      Share
+                    </p>
+                  </footer>
+                </div>
               </div>
-            </div>
-            <div className="column is-one-third">Donate 
+              <div className="column is-one-third">Donate
               <Checkout />
+              </div>
+              <div className="columnis-one-third"></div>
             </div>
-            <div className="columnis-one-third"></div>
           </div>
         </section>
-      </Layout>
+      </Layout >
     )
   }
 }
