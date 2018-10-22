@@ -1,12 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import 404 from '../img/404.png'
+import 404img from '../img/404.png'
 
 const NotFoundPage = () => (
   <Layout>
     <div className="columns">
       <div className="column">
-        <img src={404} />
+        <img src={404img} />
       </div>
       <div className="column">
       <h1>NOT FOUND</h1>
