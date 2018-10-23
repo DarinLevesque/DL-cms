@@ -98,10 +98,11 @@ const Checkout = class extends React.Component {
         </header>
         <div className="card-content">
           <div className="content">
-        <p>
-          Use any email, 4242 4242 4242 4242 as the credit card number, any 3
-          digit number, and any future date of expiration.
-        </p>
+            <p>
+              Use any email, 4242 4242 4242 4242 as the credit card number, any 3
+              digit number, and any future date of expiration.
+            </p>
+          </div>
         </div>
         <footer className="card-footer">
           <div className="card-footer-item">
