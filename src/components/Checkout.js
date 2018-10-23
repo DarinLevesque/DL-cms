@@ -85,20 +85,35 @@ const Checkout = class extends React.Component {
 
   render() {
     return (
-      <div style={cardStyles}>
-        <h4>Spend your Money!</h4>
+      <div className="card" {/*style={cardStyles}*/}>
+        <header class="card-header">
+          <p class="card-header-title">
+            Testing <h4>{this.state.paymentMessage}</h4>
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
         <p>
           Use any email, 4242 4242 4242 4242 as the credit card number, any 3
           digit number, and any future date of expiration.
         </p>
-        <button
-          style={buttonStyles}
-          onClick={event => this.openStripeCheckout(event)}
-          disabled={this.state.disabled}
-        >
-          {this.state.buttonText}
-        </button>
-        {this.state.paymentMessage}
+        </div>
+        <footer class="card-footer">
+          <div class="card-footer-item">
+            <button
+              style={buttonStyles}
+              onClick={event => this.openStripeCheckout(event)}
+              disabled={this.state.disabled}
+            >
+              {this.state.buttonText}
+            </button>
+          </div>
+        </footer>        
       </div>
     )
   }
