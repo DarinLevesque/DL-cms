@@ -31,12 +31,12 @@ const buttonStyles = {
 const Checkout = class extends React.Component {
   state = {
     disabled: false,
-    buttonText: "BUY NOW",
+    buttonText: "Donate",
     paymentMessage: "",
   }
 
   resetButton() {
-    this.setState({ disabled: false, buttonText: "BUY NOW" })
+    this.setState({ disabled: false, buttonText: "Donate" })
   }
 
   componentDidMount() {
@@ -75,8 +75,8 @@ const Checkout = class extends React.Component {
             this.setState({ paymentMessage: "Payment Successful!" })
             return res
           })
-          .catch(error => {
-            console.error("Error:", error)
+          .catch(errorMessage => {
+            console.error("Error:", errorMessage)
             this.setState({ paymentMessage: "Payment Failed" })
           })
       },
