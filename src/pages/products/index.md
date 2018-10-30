@@ -1,7 +1,7 @@
 ---
 templateKey: product-page
 title: Portfolio
-image: /img/joshua-wilking-592602-unsplash.jpg
+image: 'https://ucarecdn.com/9b2f3a64-0fe0-4aa4-bef7-2f8879ad5238/'
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
