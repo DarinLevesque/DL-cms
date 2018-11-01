@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
                 <div className="column is-two-thirds">
                   <h1>Welcome</h1>
                   <p>
-                    I've been working in high-demand aviation environments since 2004. {" "}<Link to="/about">My journey</Link>{" "}
+                    I/'ve been working in high-demand aviation environments since 2004. {" "}<Link to="/about">My journey</Link>{" "}
                     started as a CH-46 Seaknight (Phrog) Crew Chief after which I transtioned to the
                     V-22 Osprey in 2006 and decided to enter government civilian service in 2014.
                     </p>
