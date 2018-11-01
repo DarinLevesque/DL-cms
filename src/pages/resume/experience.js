@@ -4,6 +4,8 @@ import TimeAgo from 'react-timeago'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
 import './react-vertical-timeline-component-style.css'
 import WorkIcon from '../../components/WorkIcon'
+import SchoolIcon from '../../components/SchoolIcon'
+import StarIcon from '../../components/StarIcon'
 
 const Experience = () => {
     return (
