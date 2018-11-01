@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
 import './react-vertical-timeline-component-style.css'
+import WorkIcon from '../../components/WorkIcon'
 
 const Experience = () => {
     return (
