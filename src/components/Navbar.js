@@ -82,7 +82,6 @@ class Navbar extends React.Component {
             <Link id="home" to="/" onClick={() => this.closeMenu()}>
               <i className="fas fa-home" />{" "}
             </Link>
-
             <p className="menu-label">General</p>
             <ul className="menu-list">
               <li>
@@ -149,7 +148,6 @@ class Navbar extends React.Component {
                   </Link>
               </li>
             </ul>
-
             <footer className="footer has-background-grey-lighter">
               <div className="content has-text-centered">
                 <i className="fas fa-download" />{" "}

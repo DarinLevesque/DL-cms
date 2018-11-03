@@ -1,15 +1,85 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import {Link, graphql} from 'gatsby'
 import Layout from '../components/Layout'
 //import Typed from '../components/Typed'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
+const styles = {.cd - headline.rotate - 1.cd - words - wrapper {
+    display: inline - block;
+    perspective: 300 px;
+  }.cd - headline.rotate - 1 b {
+    opacity: 0;
+    transform - origin: 50 % 100 %;
+    transform: rotateX(180 deg);
+    display: inline - block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  cd - headline.rotate - 1 b.is - visible {
+    position: relative;
+    opacity: 1;
+    transform: rotateX(0 deg);
+    animation: cd - rotate - 1 - in 1.2 s;
+  }.cd - headline.rotate - 1 b.is - hidden {
+    transform: rotateX(180 deg);
+    animation: cd - rotate - 1 - out 1.2 s;
+  }
+  @keyframes cd - rotate - 1 - in {
+    0 % {
+      transform: rotateX(180 deg);
+      opacity: 0;
+    }
+    35 % {
+      transform: rotateX(120 deg);
+      opacity: 0;
+    }
+    65 % {
+      opacity: 0;
+    }
+    100 % {
+      transform: rotateX(360 deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes cd - rotate - 1 - out {
+    0 % {
+      transform: rotateX(0 deg);
+      opacity: 1;
+    }
+    35 % {
+      transform: rotateX(-40 deg);
+      opacity: 1;
+    }
+    65 % {
+      opacity: 0;
+    }
+    100 % {
+      transform: rotateX(180 deg);
+      opacity: 0;
+    }
+  }
+}
+
 export default class IndexPage extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout styles={styles}>
+        <section class="cd-intro">
+          <h1 class="cd-headline rotate-1">
+            <span>My favourite food is</span>
+            <span class="cd-words-wrapper">
+              <b class="is-visible">pizza</b>
+              <b>sushi</b>
+              <b>steak</b>
+            </span>
+          </h1>
+        </section>
+        <!-- cd-intro -->
         <section className="hero is-medium is-dark is-bold">
           <div className="hero-body">
             <div className="container">
@@ -17,7 +87,7 @@ export default class IndexPage extends React.Component {
                 <figure
                   className="media-left column is-offset-one-quarter is-one-quarter animated fadeInLeftBig">
                   <p className="image is-128x128">
-                    <img src={Profile} alt="Darin in tie" />
+                    <img src={Profile} alt="Darin in tie"/>
                   </p>
                 </figure>
                 <div className="media-content column is-one-half">
@@ -47,17 +117,17 @@ export default class IndexPage extends React.Component {
                     I've been working in high-demand aviation environments since 2004. {" "}<Link to="/about">My journey</Link>{" "}
                     started as a CH-46 Seaknight (Phrog) Crew Chief after which I transtioned to the
                     V-22 Osprey in 2006 and decided to enter government civilian service in 2014.
-                    </p>
+                  </p>
                   <p>
                     In my ten years on active duty in the Marine Corps I achieved the following:
-                    </p>
+                  </p>
                   <ul>
                     <li>Weapons and Tactics Instructor</li>
                     <li>Night Systems Instructor</li>
                     <li>Crew Resource Management Instructor</li>
                     <li>
                       Naval Air Training & Operating Procedures Standardization Instructor
-                      </li>
+                    </li>
                     <li>Collateral Duty Inspector</li>
                   </ul>
                 </div>
@@ -93,13 +163,10 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
               <div className="column is-one-third">Donate
-              <Checkout />
+                <Checkout/>
               </div>
               <div className="columnis-one-third"></div>
             </div>
           </div>
         </section>
       </Layout >
-    )
-  }
-}
