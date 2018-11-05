@@ -1,19 +1,16 @@
 import React from "react";
 import Layout from '../../components/Layout'
 
-function openTab(evt, tabTitle) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabTitle).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+const tabs = document.querySelectorAll(".tab");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", event => {
+    document.getElementsByClassName("is-active")[0]
+            .classList.remove("is-active");
+    
+    tab.classList.add("is-active");
+  });
+});
 
 export default class ResumePage extends React.Component {
   render() {
@@ -21,34 +18,14 @@ export default class ResumePage extends React.Component {
             <Layout>
                 <section className="section columns">
                     <div className="column">
-                        <div className="tabs is-centered">
-                            <ul>
-                              <li id="tablinks">
-                                <a onclick="openTab(event, 'Overview')">
-                                <span className="icon is-large"><i class="fa fa-2x fa-html5 blue"></i></span>
-                                <span>Overview</span>
-                              </a>
-                              </li>
-                              <li id="tablinks">
-                                <a onclick="openTab(event, 'Details')">
-                                <span className="icon is-large"><i class="fa fa-2x fa-tablet blue"></i></span>
-                                <span>Details</span>
-                              </a>
-                              </li>
-                              <li id="tablinks">
-                                <a onclick="openTab(event, 'Specification')">
-                                <span clasNames="icon is-large"><i class="fa fa-2x fa-file-code-o blue"></i></span>
-                                <span>Specification</span>
-                              </a>
-                              </li>
-                              <li id="tablinks">
-                                 <a onclick="openTab(event, 'Reviews')">
-                                <span className="icon is-large"><i class="fa fa-2x fa-cog blue"></i></span>
-                                <span>Reviews</span>
-                              </a>
-                              </li>
-                            </ul>
-                          </div>
+                        <div class="tabs">
+                          <ul>
+                            <li class="tab is-active"><a>Pictures</a></li>
+                            <li class="tab"><a>Music</a></li>
+                            <li class="tab"><a>Videos</a></li>
+                            <li class="tab"><a>Documents</a></li>
+                          </ul>
+                        </div>
                     </div>
                 </section>
                 <div className="container section">
