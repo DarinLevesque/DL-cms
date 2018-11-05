@@ -1,18 +1,19 @@
 import React from "react";
 import Layout from '../../components/Layout'
 
-const tabs = document.querySelectorAll(".tab");
-
-tabs.forEach(tab => {
-  tab.addEventListener("click", event => {
-    document.getElementsByClassName("is-active")[0]
-            .classList.remove("is-active");
-    
-    tab.classList.add("is-active");
-  });
-});
-
 export default class ResumePage extends React.Component {
+  componentDidMount() {
+    const tabs = document.querySelectorAll(".tab")
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", event => {
+        document.getElementsByClassName("is-active")[0]
+                .classList.remove("is-active");
+
+        tab.classList.add("is-active")
+      })
+    })
+  }
   render() {
         return (
             <Layout>
