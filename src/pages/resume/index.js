@@ -54,5 +54,3 @@ export default class ResumePage extends React.Component {
         </Layout>
     );
 };
-
-export default ResumePage
