@@ -24,7 +24,6 @@ const styles = {
     background: "#e0e0e0",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
-    position: "fixed",
     top: "0"
   },
   bmMorphShape: {
