@@ -48,7 +48,6 @@ export default class ResumePage extends React.Component {
                           </a>
                           </li>
                         </ul>
-                        <!--/tabs is-centered-->
                       </div>
                 </div>
             </section>
