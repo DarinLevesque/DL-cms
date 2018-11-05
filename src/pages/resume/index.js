@@ -1,6 +1,14 @@
 import React from "react";
 import Layout from '../../components/Layout'
 
+function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("content-tab");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+}
+
 export default class ResumePage extends React.Component {
   componentDidMount() {
     const tabs = document.querySelectorAll(".tab")
@@ -21,10 +29,10 @@ export default class ResumePage extends React.Component {
                     <div className="column">
                         <div class="tabs">
                           <ul>
-                            <li class="tab is-active"><a>Pictures</a></li>
-                            <li class="tab"><a>Music</a></li>
-                            <li class="tab"><a>Videos</a></li>
-                            <li class="tab"><a>Documents</a></li>
+                            <li class="tab is-active" onclick="openTab(event,'Overview')"><a>Pictures</a></li>
+                            <li class="tab" onclick="openTab(event,'Details')"><a>Music</a></li>
+                            <li class="tab" onclick="openTab(event,'Specification')"><a>Videos</a></li>
+                            <li class="tab" onclick="openTab(event,'Reviews')"><a>Documents</a></li>
                           </ul>
                         </div>
                     </div>
