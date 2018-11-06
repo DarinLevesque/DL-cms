@@ -7,6 +7,8 @@ function openTab(evt, tabName) {
   for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
   }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " is-active";
 }
 
 export default class ResumePage extends React.Component {
