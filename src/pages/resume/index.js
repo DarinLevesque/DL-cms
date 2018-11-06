@@ -23,7 +23,7 @@ export default class ResumePage extends React.Component {
         tab.classList.add("is-active")
       })
     })
-   function openTab(evt, tabName) {
+   openTab(evt, tabName) {
         var i, x, tablinks;
         x = document.getElementsByClassName("content-tab");
         for (i = 0; i < x.length; i++) {
