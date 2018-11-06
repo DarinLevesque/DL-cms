@@ -14,7 +14,7 @@ function openTab(evt, tabName) {
 export default class ResumePage extends React.Component {
     constructor(props) {
     super(props);
-    openTab(evt, tabName) {
+    function openTab(evt, tabName) {
         var i, x, tablinks;
         x = document.getElementsByClassName("content-tab");
         for (i = 0; i < x.length; i++) {
