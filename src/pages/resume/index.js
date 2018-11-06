@@ -12,7 +12,17 @@ function openTab(evt, tabName) {
   }
 
 export default class ResumePage extends React.Component {
-  componentDidMount() {
+  function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("content-tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " is-active";
+      }   
+    
+    componentDidMount() {
     const tabs = document.querySelectorAll(".tab")
 
     tabs.forEach(tab => {
@@ -23,15 +33,6 @@ export default class ResumePage extends React.Component {
         tab.classList.add("is-active")
       })
     })
-   openTab(evt, tabName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("content-tab");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " is-active";
-      }   
   }
   render() {
         return (
