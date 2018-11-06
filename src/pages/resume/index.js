@@ -1,9 +1,7 @@
 import React from "react";
 import Layout from '../../components/Layout'
 
-export default class ResumePage extends React.Component {
-  
-  function openTab(evt, tabName) {
+function openTab(evt, tabName) {
     var i, x, tablinks;
     x = document.getElementsByClassName("content-tab");
     for (i = 0; i < x.length; i++) {
@@ -12,7 +10,8 @@ export default class ResumePage extends React.Component {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " is-active";
   }
-  
+
+export default class ResumePage extends React.Component {
   componentDidMount() {
     const tabs = document.querySelectorAll(".tab")
 
