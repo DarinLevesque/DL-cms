@@ -12,19 +12,6 @@ function openTab(evt, tabName) {
   }
 
 export default class ResumePage extends React.Component {
-    constructor(props) {
-    super(props);
-    function openTab(evt, tabName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("content-tab");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " is-active";
-      }
-  }
-
   componentDidMount() {
     const tabs = document.querySelectorAll(".tab")
 
@@ -36,6 +23,15 @@ export default class ResumePage extends React.Component {
         tab.classList.add("is-active")
       })
     })
+   function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("content-tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " is-active";
+      }   
   }
   render() {
         return (
