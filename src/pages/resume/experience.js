@@ -2,7 +2,7 @@ import React from "react";
 import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
-import styles from './react-vertical-timeline-component-style.css'
+import styles from './react-vertical-timeline-component-style.module.css'
 import WorkIcon from '../../components/WorkIcon'
 import SchoolIcon from '../../components/SchoolIcon'
 import StarIcon from '../../components/StarIcon'
