@@ -16,7 +16,7 @@ const Experience = () => {
                     <p>Test Resource Manager for NAVAIR hired <TimeAgo date="Sep 30, 2015" /></p>
                 </div>
             </section>
-            <VerticalTimeline className={styles}>
+            <VerticalTimeline styles={styles}>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="2011 - present"
