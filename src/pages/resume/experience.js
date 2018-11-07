@@ -2,7 +2,7 @@ import React from "react";
 import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
-import './react-vertical-timeline-component-style.css'
+import styles from './react-vertical-timeline-component-style.css'
 import WorkIcon from '../../components/WorkIcon'
 import SchoolIcon from '../../components/SchoolIcon'
 import StarIcon from '../../components/StarIcon'
@@ -15,7 +15,7 @@ const Experience = () => {
                     <p>Test Resource Manager for NAVAIR hired <TimeAgo date="Sep 30, 2015" /></p>
                 </div>
             </section>
-            <VerticalTimeline>
+            <VerticalTimeline className={styles}>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="2011 - present"
