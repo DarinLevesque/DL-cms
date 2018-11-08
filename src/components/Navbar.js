@@ -86,14 +86,14 @@ class Navbar extends React.Component {
             <ul className="menu-list">
               <li>
                 <Link id="about" to="/about" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-user" />{" "}
-                  About Me
+                  <i className="fas fa-user" />
+                  <span> About Me</span>
                   </Link>
               </li>
               <li>
                 <Link to="/projects" onClick={() => this.closeMenu()}>
                   <i className="fas fa-cogs" />{" "}
-                  Projects
+                  <span> Projects</span>
                   </Link>
               </li>
             </ul>
@@ -104,13 +104,13 @@ class Navbar extends React.Component {
               <li>
                 <Link to="/" onClick={() => this.closeMenu()}>
                   <i className="fas fa-fighter-jet" />{" "}
-                  Professional
+                  <span> Professional</span>
                   </Link>
               </li>
               <li>
                 <Link to="/" onClick={() => this.closeMenu()}>
                   <i className="fas fa-users" />{" "}
-                  Family
+                  <span> Family</span>
                   </Link>
               </li>
               <li>
@@ -124,19 +124,19 @@ class Navbar extends React.Component {
               <li>
                 <Link to="/resume/education" onClick={() => this.closeMenu()}>
                   <i className="fas fa-graduation-cap" />{" "}
-                  Education
+                  <span> Education</span>
                   </Link>
               </li>
               <li>
                 <Link to="/resume/experience" onClick={() => this.closeMenu()}>
                   <i className="fas fa-briefcase" />{" "}
-                  Experience
+                  <span> Experience</span>
                   </Link>
               </li>
               <li>
                 <Link to="/" onClick={() => this.closeMenu()}>
                   <i className="fas fa-chart-line" />{" "}
-                  Skills
+                  <span> Skills</span>
                   </Link>
               </li>
             </ul>
@@ -144,7 +144,7 @@ class Navbar extends React.Component {
               <li>
                 <Link id="contact" to="/contact" onClick={() => this.closeMenu()}>
                   <i className="fas fa-envelope" />{" "}
-                  Contact
+                  <span> Contact</span>
                   </Link>
               </li>
             </ul>
