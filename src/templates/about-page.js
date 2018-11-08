@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           </div>
           <div class="column is-one-third">
             <figure class="image is-square">
-              <img src="https://bulma.io/images/placeholders/128x128.png">
+              <img src="https://bulma.io/images/placeholders/128x128.png" />
             </figure>
           </div>
         </div>
