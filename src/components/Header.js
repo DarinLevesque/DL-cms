@@ -17,8 +17,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="navbar-menu">
-            <div className="navbar-start"></div>
-            <div className="navbar-end">
+            <div className="navbar-start">
               <Link to="/about" className="navbar-item is-active">
                 <i className="fas fa-user" /><span> About</span>
               </Link>
@@ -59,7 +58,7 @@ const Header = () => {
                 Contact
               </Link>
             </div>
-            <div>
+            <div className="navbar-end">
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
                 <img src={github} alt="github icon" />
