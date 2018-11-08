@@ -35,9 +35,6 @@ const styles = {
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.6)"
-  },
-  aside: {
-    position: "fixed"
   }
 };
 
