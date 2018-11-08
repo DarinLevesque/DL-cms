@@ -10,10 +10,19 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <div className="section">
       <div className="container">
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-          {title}
-        </h2>
-        <PageContent className="content" content={content} />
+        <div class="columns is-mobile">
+          <div class="column">
+            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              {title}
+            </h2>
+            <PageContent className="content" content={content} />
+          </div>
+          <div class="column is-one-third">
+            <figure class="image is-square">
+              <img src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
   )
