@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-//import Typed from '../components/Typed'
+import Typed from '../components/Typed'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
@@ -23,14 +23,14 @@ export default class IndexPage extends React.Component {
                 <div className="media-content column is-one-half">
                   <h1 className="title">Who am I?</h1>
                   <h2 className="subtitle">
-                    {/*<Typed
+                    <Typed
                       strings={["Hi, my name is Darin.", "I'm a Test Resource Manager for NAVAIR"]}
                       startDelay={2500}
                       nextStringDelay={[2500, 2000]}
                       lifeLike={true}
                       cursorChar="_"
                       breakLines={false}
-                      autoStart={false} />*/}
+                      autoStart={false} />
                   </h2>
                 </div>
               </article>
@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
                 <div className="column is-two-thirds">
                   <h1>Welcome</h1>
                   <p>
-                    I/'ve been working in high-demand aviation environments since 2004. {" "}<Link to="/about">My journey</Link>{" "}
+                    I've been working in high-demand aviation environments since 2004. {" "}<Link to="/about">My journey</Link>{" "}
                     started as a CH-46 Seaknight (Phrog) Crew Chief after which I transtioned to the
                     V-22 Osprey in 2006 and decided to enter government civilian service in 2014.
                     </p>
