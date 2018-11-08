@@ -19,7 +19,7 @@ const Header = () => {
             <div className="navbar-start"></div>
             <div className="navbar-end">
               <Link to="/about" className="navbar-item is-active">
-                <i className="fas fa-user" />{" "}About
+                <i className="fas fa-user" /><span> About</span>
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="/blog" className="navbar-link">
@@ -27,10 +27,10 @@ const Header = () => {
                 </Link>
                 <div className="navbar-dropdown">
                   <Link to="/blog/professional" className="navbar-item">
-                    <i className="fas fa-fighter-jet" />{" "} Professional
+                    <i className="fas fa-fighter-jet" /><span> Professional</span>
                   </Link>
                   <Link to="/blog/family" className="navbar-item">
-                    <i className="fas fa-users" />{" "} Family
+                    <i className="fas fa-users" /><span> Family</span>
                   </Link>
                 </div>
               </div>
@@ -40,17 +40,17 @@ const Header = () => {
                 </Link>
                 <div className="navbar-dropdown">
                   <Link to="/resume/experience" className="navbar-item">
-                    Experience
+                    <i className="fas fa-wrench" /><span> Experience</span>
                   </Link>
                   <Link to="/resume/education" className="navbar-item">
-                    Education
+                    <i className="fas fa-user-graduate" /><span> Education</span>
                   </Link>
                   <Link to="/resume/skills" className="navbar-item">
-                    Skills
+                    <i className="fas fa-table-tennis" /><span> Skills</span>
                   </Link>
                   <hr className="navbar-divider" />
                   <Link to="/timeline" className="navbar-item">
-                    <i className="fas fa-download" />{" "} Download
+                    <i className="fas fa-download" /><span> Download</span>
                   </Link>
                 </div>
               </div>
