@@ -4,7 +4,7 @@ import Headroom from "react-headroom";
 import github from '../img/github-icon.svg'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import logo from "../img/DarinLWEBP.webp";
+import logo from "../img/dl6.png";
 
 const Header = () => {
   return (
