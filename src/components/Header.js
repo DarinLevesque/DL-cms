@@ -59,9 +59,9 @@ const Header = () => {
               </Link>
             </div>
             <div>
-              <Link to="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
+              <a href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
                 <img src={github} alt="github icon" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
