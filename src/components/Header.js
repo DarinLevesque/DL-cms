@@ -59,7 +59,7 @@ const Header = () => {
             </div>
             <div className="navbar-end">
               <OutboundLink
-                href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
+                href="https://github.com/DarinLevesque/DL-cms" className="navbar-item animated bounceInRight delay-3s">
                 <span className="tooltip is-tooltip-bottom" data-tooltip="Github Repository">
                   <i className="fab fa-github fa-lg fa-inverse"/>
                 </span>
