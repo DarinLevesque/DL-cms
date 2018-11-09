@@ -75,7 +75,7 @@ class Navbar extends React.Component {
           styles={styles}
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
-          width={ '20%' }
+          width={ '280px' }
           right
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}>
