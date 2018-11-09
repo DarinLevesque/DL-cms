@@ -149,17 +149,14 @@ class Navbar extends React.Component {
                   </Link>
               </li>
             </ul>
-
-            <footer className="footer">
-              <div className="level">
-                <div className="level-left">
-                  <i className="fas fa-download" />
-                </div>
-                <div className="level-right">
-                  <i className="fas fa-github" />
-                </div>
+            <div className="level">
+              <div className="level-left">
+                <i className="fas fa-download" />
               </div>
-            </footer>
+              <div className="level-right">
+                <i className="fas fa-github" />
+              </div>
+            </div>
           </aside>
         </Menu>
       </div>
