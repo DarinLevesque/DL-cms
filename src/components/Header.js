@@ -11,17 +11,17 @@ const Header = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <Link activeClassName="is-active" className="navbar-item animated bounceInDown" to="/">
+            <Link activeClassName="is-active" className="navbar-item" to="/">
               <img src={logo} alt="Darin Levesque Logo" width="112" height="50" />
             </Link>
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
-              <Link to="/about" activeClassName="is-active" className="navbar-item animated bounceInDown delay-2s">
+              <Link to="/about" activeClassName="is-active" className="navbar-item">
                 <i className="fas fa-user" /><span>&nbsp;About</span>
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="/blog" className="navbar-link animated bounceInDown delay-2s" activeClassName="is-active">
+                <Link to="/blog" className="navbar-link" activeClassName="is-active">
                   <i className="fas fa-newspaper" />&nbsp;Blog
                 </Link>
                 <div className="navbar-dropdown">
@@ -34,7 +34,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="/resume" className="navbar-link animated bounceInDown delay-2s" activeClassName="is-active">
+                <Link to="/resume" className="navbar-link" activeClassName="is-active">
                   <i className="fas fa-briefcase" />&nbsp;Resume
                 </Link>
                 <div className="navbar-dropdown">
@@ -53,13 +53,13 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-              <Link to="/contact" className="navbar-item animated bounceInDown delay-2s" activeClassName="is-active">
+              <Link to="/contact" className="navbar-item" activeClassName="is-active">
                 <i className="fas fa-envelope" />&nbsp;Contact
               </Link>
             </div>
             <div className="navbar-end">
               <OutboundLink
-                href="https://github.com/DarinLevesque/DL-cms" className="navbar-item animated bounceInRight delay-3s">
+                href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
                 <span className="tooltip is-tooltip-bottom" data-tooltip="Github Repository">
                   <i className="fab fa-github fa-lg fa-inverse"/>
                 </span>
