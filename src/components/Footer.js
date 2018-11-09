@@ -74,6 +74,7 @@ const Footer = () => {
                 </div>
                 <div class="tel">Tel: <Obfuscate tel="603-326-8667" /></div>
               </address>
+              <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me an espresso', '#46a9b8', 'E1E4LU0A');kofiwidget2.draw();</script> 
             </div>
           </div>
         </div>
