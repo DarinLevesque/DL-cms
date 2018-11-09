@@ -11,21 +11,21 @@ const Header = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <Link className="navbar-item" to="/">
+            <Link activeClassName="is-active" className="navbar-item" to="/">
               <img src={logo} alt="Darin Levesque Logo" width="112" height="50" />
             </NavLink>
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
-              <Link to="/about" className="navbar-item is-active">
+              <Link to="/about" activeClassName="is-active" className="navbar-item is-active">
                 <i className="fas fa-user" /><span>&nbsp;About</span>
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="/blog" className="navbar-link">
+                <Link to="/blog" className="navbar-link" activeClassName="is-active">
                   Blog
                 </Link>
                 <div className="navbar-dropdown">
-                  <Link to="/blog/professional" className="navbar-item">
+                  <Link to="/blog/professional" className="navbar-item" activeClassName="is-active">
                     <i className="fas fa-fighter-jet" /><span>&nbsp;Professional</span>
                   </Link>
                   <Link to="/blog/family" className="navbar-item">
