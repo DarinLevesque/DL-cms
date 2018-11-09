@@ -28,32 +28,32 @@ const Header = () => {
                   <Link to="/blog/professional" className="navbar-item" activeClassName="is-active">
                     <i className="fas fa-fighter-jet" /><span>&nbsp;Professional</span>
                   </Link>
-                  <Link to="/blog/family" className="navbar-item">
+                  <Link to="/blog/family" className="navbar-item" activeClassName="is-active">
                     <i className="fas fa-users" /><span>&nbsp;Family</span>
                   </Link>
                 </div>
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link to="/resume" className="navbar-link">
+                <Link to="/resume" className="navbar-link" activeClassName="is-active">
                   Resume
                 </Link>
                 <div className="navbar-dropdown">
-                  <Link to="/resume/experience" className="navbar-item">
+                  <Link to="/resume/experience" className="navbar-item" activeClassName="is-active">
                     <i className="fas fa-wrench" /><span>&nbsp;Experience</span>
                   </Link>
-                  <Link to="/resume/education" className="navbar-item">
+                  <Link to="/resume/education" className="navbar-item" activeClassName="is-active">
                     <i className="fas fa-user-graduate" /><span>&nbsp;Education</span>
                   </Link>
-                  <Link to="/resume/skills" className="navbar-item">
+                  <Link to="/resume/skills" className="navbar-item" activeClassName="is-active">
                     <i className="fas fa-table-tennis" /><span>&nbsp;Skills</span>
                   </Link>
                   <hr className="navbar-divider" />
-                  <Link to="/timeline" className="navbar-item">
+                  <Link to="/timeline" className="navbar-item" activeClassName="is-active">
                     <i className="fas fa-download" /><span>&nbsp;Download</span>
                   </Link>
                 </div>
               </div>
-              <Link to="/contact" className="navbar-item">
+              <Link to="/contact" className="navbar-item" activeClassName="is-active">
                 <i className="fas fa-envelope">&nbsp;Contact</i>
               </Link>
             </div>
