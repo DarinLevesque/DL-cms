@@ -18,7 +18,7 @@ const Header = () => {
           <div className="navbar-menu">
             <div className="navbar-start">
               <Link to="/about" className="navbar-item is-active">
-                <i className="fas fa-user" /><span>{' '} About</span>
+                <i className="fas fa-user" /><span>&nbsp;About</span>
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="/blog" className="navbar-link">
@@ -26,10 +26,10 @@ const Header = () => {
                 </Link>
                 <div className="navbar-dropdown">
                   <Link to="/blog/professional" className="navbar-item">
-                    <i className="fas fa-fighter-jet" /><span> Professional</span>
+                    <i className="fas fa-fighter-jet" /><span>&nbsp;Professional</span>
                   </Link>
                   <Link to="/blog/family" className="navbar-item">
-                    <i className="fas fa-users" /><span>{' '} Family</span>
+                    <i className="fas fa-users" /><span>&nbsp;Family</span>
                   </Link>
                 </div>
               </div>
@@ -39,17 +39,17 @@ const Header = () => {
                 </Link>
                 <div className="navbar-dropdown">
                   <Link to="/resume/experience" className="navbar-item">
-                    <i className="fas fa-wrench" /><span>{' '} Experience</span>
+                    <i className="fas fa-wrench" /><span>&nbsp;Experience</span>
                   </Link>
                   <Link to="/resume/education" className="navbar-item">
-                    <i className="fas fa-user-graduate" /><span>{' '} Education</span>
+                    <i className="fas fa-user-graduate" /><span>&nbsp;Education</span>
                   </Link>
                   <Link to="/resume/skills" className="navbar-item">
-                    <i className="fas fa-table-tennis" /><span>{' '} Skills</span>
+                    <i className="fas fa-table-tennis" /><span>&nbsp;Skills</span>
                   </Link>
                   <hr className="navbar-divider" />
                   <Link to="/timeline" className="navbar-item">
-                    <i className="fas fa-download" /><span>{' '} Download</span>
+                    <i className="fas fa-download" /><span>&nbsp;Download</span>
                   </Link>
                 </div>
               </div>
@@ -58,12 +58,9 @@ const Header = () => {
               </Link>
             </div>
             <div className="navbar-end">
-              <span className="tooltip is-tooltip-bottom" data-tooltip="Download Resume">
-                  <i className="fas fa-lg fa-download fa-inverse" />
-                </span>
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
-                <span className="tooltip is-tooltip-bottom" data-tooltip="Download Resume">
+                <span className="tooltip is-tooltip-bottom" data-tooltip="Github Repository">
                   <i className="fab fa-github fa-lg fa-inverse"/>
                 </span>
               </OutboundLink>
