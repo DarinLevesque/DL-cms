@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import TimeAgo from 'react-timeago'
 import Layout from '../components/Layout'
 
 export default class BlogPage extends React.Component {
@@ -27,7 +28,7 @@ export default class BlogPage extends React.Component {
                         {post.frontmatter.title}
                       </Link>
                       <span> &bull; </span>
-                      <small>{post.frontmatter.date}</small>
+                      <small><TimeAgo date={post.frontmatter.date} />{post.frontmatter.date}</small>
                     </p>
                     <p>
                       {post.excerpt}
