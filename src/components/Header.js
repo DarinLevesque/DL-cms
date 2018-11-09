@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from 'react-router-dom'
+import { Link } from 'gatsby'
 import Headroom from "react-headroom";
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
@@ -11,51 +11,51 @@ const Header = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
-            <NavLink className="navbar-item" to="/">
+            <Link className="navbar-item" to="/">
               <img src={logo} alt="Darin Levesque Logo" width="112" height="50" />
             </NavLink>
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
-              <NavLink to="/about" className="navbar-item is-active">
+              <Link to="/about" className="navbar-item is-active">
                 <i className="fas fa-user" /><span>&nbsp;About</span>
-              </NavLink>
+              </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <NavLink to="/blog" className="navbar-link">
+                <Link to="/blog" className="navbar-link">
                   Blog
-                </NavLink>
+                </Link>
                 <div className="navbar-dropdown">
-                  <NavLink to="/blog/professional" className="navbar-item">
+                  <Link to="/blog/professional" className="navbar-item">
                     <i className="fas fa-fighter-jet" /><span>&nbsp;Professional</span>
-                  </NavLink>
-                  <NavLink to="/blog/family" className="navbar-item">
+                  </Link>
+                  <Link to="/blog/family" className="navbar-item">
                     <i className="fas fa-users" /><span>&nbsp;Family</span>
-                  </NavLink>
+                  </Link>
                 </div>
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
-                <NavLink to="/resume" className="navbar-link">
+                <Link to="/resume" className="navbar-link">
                   Resume
-                </NavLink>
+                </Link>
                 <div className="navbar-dropdown">
-                  <NavLink to="/resume/experience" className="navbar-item">
+                  <Link to="/resume/experience" className="navbar-item">
                     <i className="fas fa-wrench" /><span>&nbsp;Experience</span>
-                  </NavLink>
-                  <NavLink to="/resume/education" className="navbar-item">
+                  </Link>
+                  <Link to="/resume/education" className="navbar-item">
                     <i className="fas fa-user-graduate" /><span>&nbsp;Education</span>
-                  </NavLink>
-                  <NavLink to="/resume/skills" className="navbar-item">
+                  </Link>
+                  <Link to="/resume/skills" className="navbar-item">
                     <i className="fas fa-table-tennis" /><span>&nbsp;Skills</span>
-                  </NavLink>
+                  </Link>
                   <hr className="navbar-divider" />
-                  <NavLink to="/timeline" className="navbar-item">
+                  <Link to="/timeline" className="navbar-item">
                     <i className="fas fa-download" /><span>&nbsp;Download</span>
-                  </NavLink>
+                  </Link>
                 </div>
               </div>
-              <NavLink to="/contact" className="navbar-item">
+              <Link to="/contact" className="navbar-item">
                 Contact
-              </NavLink>
+              </Link>
             </div>
             <div className="navbar-end">
               <OutboundLink
