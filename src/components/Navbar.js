@@ -157,7 +157,7 @@ class Navbar extends React.Component {
               <div className="level-right">
                 <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
-                  <i className="fab fa-github fa-inverse tooltip" data-tooltip="Github Repository"/>
+                  <i className="fab fa-github tooltip" data-tooltip="Github Repository"/>
                 </OutboundLink>
               </div>
             </div>
