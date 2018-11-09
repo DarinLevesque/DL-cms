@@ -154,7 +154,10 @@ class Navbar extends React.Component {
                 <i className="fas fa-download" />
               </div>
               <div className="level-right">
-                <i className="fas fa-github" />
+                <OutboundLink
+                href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
+                  <i className="fab fa-github fa-inverse"/>
+                </OutboundLink>
               </div>
             </div>
           </aside>
