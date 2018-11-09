@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 import Headroom from "react-headroom";
-import github from '../img/github-icon.svg'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import logo from "../img/dl6.png";
@@ -61,7 +60,7 @@ const Header = () => {
             <div className="navbar-end">
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
-                <img src={github} alt="github icon" />
+                <i className="fab fa-github fa-inverse"/>
               </OutboundLink>
             </div>
           </div>
