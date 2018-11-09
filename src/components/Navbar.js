@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { pushRotate as Menu } from "react-burger-menu"
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const styles = {
   bmBurgerButton: {
