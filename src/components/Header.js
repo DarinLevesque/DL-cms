@@ -22,7 +22,7 @@ const Header = () => {
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="/blog" className="navbar-link" activeClassName="is-active">
-                  <i class="fas fa-newspaper">&nbsp;Blog</i>
+                  <i class="fab fa-newspaper">&nbsp;Blog</i>
                 </Link>
                 <div className="navbar-dropdown">
                   <Link to="/blog/professional" className="navbar-item" activeClassName="is-active">
@@ -54,7 +54,7 @@ const Header = () => {
                 </div>
               </div>
               <Link to="/contact" className="navbar-item">
-                <i class="fas fa-envelope">&nbsp;Contact</i>
+                <i class="fab fa-envelope">&nbsp;Contact</i>
               </Link>
             </div>
             <div className="navbar-end">
