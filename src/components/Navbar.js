@@ -150,10 +150,14 @@ class Navbar extends React.Component {
               </li>
             </ul>
 
-            <footer className="footer has-background-grey-lighter">
-              <div className="content has-text-centered">
-                <i className="fas fa-download" />{" "}
-                <h6>Resume</h6>
+            <footer className="footer">
+              <div className="level">
+                <div className="level-left">
+                  <i className="fas fa-download fa-inverse" />
+                </div>
+                <div className="level-right">
+                  <i className="fas fa-github fa-inverse" />
+                </div>
               </div>
             </footer>
           </aside>
