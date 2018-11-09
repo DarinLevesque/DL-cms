@@ -1,5 +1,5 @@
 import React from "react";
-import NavLink from "./NavLink";
+import { NavLink } from 'react-router-dom'
 import Headroom from "react-headroom";
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
