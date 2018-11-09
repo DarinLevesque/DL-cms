@@ -6,7 +6,7 @@
   "dependencies": {
     "bulma": "^0.7.1",
     "bulma-tooltip": "^2.0.1",
-    "bumla-timeline": "^3.0.0",
+    "bulma-timeline": "^3.0.0",
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-google-analytics": "^2.0.0",
