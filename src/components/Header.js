@@ -17,12 +17,12 @@ const Header = () => {
           </div>
           <div className="navbar-menu">
             <div className="navbar-start">
-              <Link to="/about" activeClassName="is-active" className="navbar-item is-active">
+              <Link to="/about" activeClassName="is-active" className="navbar-item">
                 <i className="fas fa-user" /><span>&nbsp;About</span>
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="/blog" className="navbar-link" activeClassName="is-active">
-                  <i class="fab fa-newspaper">&nbsp;Blog</i>
+                  <i className="fas fa-newspaper">&nbsp;Blog</i>
                 </Link>
                 <div className="navbar-dropdown">
                   <Link to="/blog/professional" className="navbar-item" activeClassName="is-active">
@@ -54,7 +54,7 @@ const Header = () => {
                 </div>
               </div>
               <Link to="/contact" className="navbar-item">
-                <i class="fab fa-envelope">&nbsp;Contact</i>
+                <i className="fas fa-envelope">&nbsp;Contact</i>
               </Link>
             </div>
             <div className="navbar-end">
