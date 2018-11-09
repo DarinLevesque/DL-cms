@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
+//import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
 import styles from './react-vertical-timeline-component-style.module.css'
 import WorkIcon from '../../components/WorkIcon'
 import SchoolIcon from '../../components/SchoolIcon'
@@ -16,7 +16,43 @@ const Experience = () => {
                     <p>Test Resource Manager for NAVAIR hired <TimeAgo date="Sep 30, 2015" /></p>
                 </div>
             </section>
-            <VerticalTimeline styles={styles}>
+                <div class="timeline is-centered">
+                  <header class="timeline-header">
+                    <span class="tag is-medium is-primary">Start</span>
+                  </header>
+                  <div class="timeline-item is-primary">
+                    <div class="timeline-marker is-primary"></div>
+                    <div class="timeline-content">
+                      <p class="heading">January 2016</p>
+                      <p>Timeline content - Can include any HTML element</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item is-warning">
+                    <div class="timeline-marker is-warning is-image is-32x32">
+                      <img src="http://bulma.io/images/placeholders/32x32.png">
+                    </div>
+                    <div class="timeline-content">
+                      <p class="heading">February 2016</p>
+                      <p>Timeline content - Can include any HTML element</p>
+                    </div>
+                  </div>
+                  <header class="timeline-header">
+                    <span class="tag is-primary">2017</span>
+                  </header>
+                  <div class="timeline-item is-danger">
+                    <div class="timeline-marker is-danger is-icon">
+                      <i class="fa fa-flag"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <p class="heading">March 2017</p>
+                      <p>Timeline content - Can include any HTML element</p>
+                    </div>
+                  </div>
+                  <header class="timeline-header">
+                    <span class="tag is-medium is-primary">End</span>
+                  </header>
+                </div>
+        {/*<VerticalTimeline styles={styles}>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date="2011 - present"
@@ -105,7 +141,7 @@ const Experience = () => {
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 icon={<StarIcon />}
               />
-            </VerticalTimeline>
+            </VerticalTimeline>*/}
         </Layout>
     );
 };
