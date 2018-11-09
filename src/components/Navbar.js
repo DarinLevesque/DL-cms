@@ -153,10 +153,10 @@ class Navbar extends React.Component {
             <footer className="footer">
               <div className="level">
                 <div className="level-left">
-                  <i className="fas fa-download fa-inverse" />
+                  <i className="fas fa-download" />
                 </div>
                 <div className="level-right">
-                  <i className="fas fa-github fa-inverse" />
+                  <i className="fas fa-github" />
                 </div>
               </div>
             </footer>
