@@ -15,10 +15,7 @@ const Contact = () => {
                     </div>
                 </section>
                 <section className="section columns">
-                    <div className="column is-one-third">
-
-                    </div>
-                    <div className="column is-one-third">
+                    <div className="column is-two-thirds">
 
                     </div>
                     <div className="column is-one-third">
