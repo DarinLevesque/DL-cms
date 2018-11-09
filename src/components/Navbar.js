@@ -152,7 +152,9 @@ class Navbar extends React.Component {
             </ul>
             <div className="level">
               <div className="level-left">
-                <i className="fas fa-lg fa-download tooltip" data-tooltip="Download Resume" />
+                <span className="tooltip" data-tooltip="Download Resume">
+                  <i className="fas fa-lg fa-download" />
+                </span>
               </div>
               <div className="level-right">
                 <OutboundLink
