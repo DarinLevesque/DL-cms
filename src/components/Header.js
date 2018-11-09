@@ -13,7 +13,7 @@ const Header = () => {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
-              <img src={logo} alt="Darin Levesque Logo" width="80" height="80" />
+              <img src={logo} alt="Darin Levesque Logo" width="112" height="50" />
             </Link>
           </div>
           <div className="navbar-menu">
