@@ -60,7 +60,7 @@ const Header = () => {
             <div className="navbar-end">
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
-                <i className="fas fa-github fa-lg fa-inverse"/>
+                <i className="fab fa-github fa-lg fa-inverse"/>
               </OutboundLink>
             </div>
           </div>
