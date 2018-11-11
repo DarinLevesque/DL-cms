@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import TimeAgo from 'react-timeago'
 import Layout from '../components/Layout'
 
 export default class BlogPage extends React.Component {
@@ -22,13 +23,15 @@ export default class BlogPage extends React.Component {
                     style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                     key={post.id}
                   >
-                    <p>
+                    <h1 class="title">
                       <Link className="has-text-primary" to={post.fields.slug}>
-                        {post.frontmatter.title}
+                         {post.frontmatter.title}
                       </Link>
-                      <span> &bull; </span>
-                      <small>{post.frontmatter.date}</small>
-                    </p>
+                    </h1>
+                    <span> &bull; </span>
+                    <h2 class="subtitle">
+                      <TimeAgo date={post.frontmatter.date} />
+                    </h2>
                     <p>
                       {post.excerpt}
                       <br />

@@ -83,13 +83,17 @@ const Footer = () => {
                 kofiwidget2.draw();
               </script>
               <a href="https://bulma.io">
-              <img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24">
+                <img
+                  src="https://bulma.io/images/made-with-bulma--dark.png"
+                  alt="Made with Bulma"
+                  width="128"
+                  height="24"/>
               </a>
             </div>
           </div>
         </div>
-      </div >
-    </footer >
+      </div>
+    </footer>
   );
 };
 
