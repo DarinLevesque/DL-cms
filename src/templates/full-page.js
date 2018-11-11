@@ -4,37 +4,34 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const FullPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <div className="section">
+    <section className="section section--gradient">
       <div className="container">
-        <div class="columns is-mobile">
-          <div class="column">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-              {title}
-            </h2>
-            <PageContent className="content" content={content} />
-          </div>
-          <div class="column is-one-third">
-            <figure class="image is-square">
-              <img src="https://bulma.io/images/placeholders/128x128.png" />
-            </figure>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section">
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                {title}
+              </h2>
+              <PageContent className="content" content={content} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-AboutPageTemplate.propTypes = {
+FullPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
+const FullPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
@@ -48,14 +45,14 @@ const AboutPage = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+FullPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default FullPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const fullPageQuery = graphql`
+  query FullPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

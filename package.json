@@ -5,6 +5,9 @@
   "author": "Darin Levesque",
   "dependencies": {
     "bulma": "^0.7.1",
+    "bulma-badge": "^2.0.0",
+    "bulma-tooltip": "^2.0.1",
+    "bulma-timeline": "^3.0.0",
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-google-analytics": "^2.0.0",
@@ -34,6 +37,8 @@
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",
     "react-obfuscate": "^2.1.10",
+    "react-timeago": "^4.1.9",
+    "react-vertical-timeline-component": "^2.3.0",
     "typeit": "^5.10.7",
     "uuid": "^3.2.1"
   },

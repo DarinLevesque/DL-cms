@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { pushRotate as Menu } from "react-burger-menu"
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const styles = {
   bmBurgerButton: {
@@ -23,7 +24,8 @@ const styles = {
   bmMenu: {
     background: "#e0e0e0",
     padding: "2.5em 1.5em 0",
-    fontSize: "1.15em"
+    fontSize: "1.15em",
+    top: "0"
   },
   bmMorphShape: {
     fill: "#373a47"
@@ -73,47 +75,48 @@ class Navbar extends React.Component {
           styles={styles}
           pageWrapId={"page-wrap"}
           outerContainerId={"outer-container"}
+          width={ '280px' }
           right
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}>
           <aside className="menu">
-            <Link id="home" to="/" onClick={() => this.closeMenu()}>
+            <Link id="home" to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
               <i className="fas fa-home" />{" "}
             </Link>
 
             <p className="menu-label">General</p>
             <ul className="menu-list">
               <li>
-                <Link id="about" to="/about" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-user" />{" "}
-                  About Me
+                <Link id="about" to="/about" onClick={() => this.closeMenu()} activeClassName="is-active">
+                  <i className="fas fa-user" />
+                  <span> About Me</span>
                   </Link>
               </li>
               <li>
-                <Link to="/projects" onClick={() => this.closeMenu()}>
+                <Link to="/projects" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-cogs" />{" "}
-                  Projects
+                  <span> Projects</span>
                   </Link>
               </li>
             </ul>
-            <Link to="/blog" className="menu-label" onClick={() => this.closeMenu()}>
+            <Link to="/blog" className="menu-label" onClick={() => this.closeMenu()} activeClassName="is-active">
               Blog
               </Link>
             <ul className="menu-list">
               <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
+                <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-fighter-jet" />{" "}
-                  Professional
+                  <span> Professional</span>
                   </Link>
               </li>
               <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
+                <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-users" />{" "}
-                  Family
+                  <span> Family</span>
                   </Link>
               </li>
               <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
+                <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
                   Invitations
                   </Link>
               </li>
@@ -121,39 +124,47 @@ class Navbar extends React.Component {
             <Link to="/resume" className="menu-label">Resume</Link>
             <ul className="menu-list">
               <li>
-                <Link to="/resume/education" onClick={() => this.closeMenu()}>
+                <Link to="/resume/education" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-graduation-cap" />{" "}
-                  Education
+                  <span> Education</span>
                   </Link>
               </li>
               <li>
-                <Link to="/resume/experience" onClick={() => this.closeMenu()}>
+                <Link to="/resume/experience" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-briefcase" />{" "}
-                  Experience
+                  <span> Experience</span>
                   </Link>
               </li>
               <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
+                <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-chart-line" />{" "}
-                  Skills
+                  <span> Skills</span>
                   </Link>
               </li>
             </ul>
             <ul className="menu-list">
               <li>
-                <Link id="contact" to="/contact" onClick={() => this.closeMenu()}>
+                <Link id="contact" to="/contact" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-envelope" />{" "}
-                  Contact
+                  <span> Contact</span>
                   </Link>
               </li>
             </ul>
-
-            <footer className="footer has-background-grey-lighter">
-              <div className="content has-text-centered">
-                <i className="fas fa-download" />{" "}
-                <h6>Resume</h6>
+            <div className="level">
+              <div className="level-left">
+                <span className="tooltip" data-tooltip="Download Resume">
+                  <i className="fas fa-lg fa-download" />
+                </span>
               </div>
-            </footer>
+              <div className="level-right">
+                <OutboundLink
+                href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
+                  <button class="button tooltip" data-tooltip="Github Repository">
+                    <i className="fab fa-lg fa-github"/>
+                  </button>
+                </OutboundLink>
+              </div>
+            </div>
           </aside>
         </Menu>
       </div>

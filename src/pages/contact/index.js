@@ -5,19 +5,26 @@ const Contact = () => {
     return (
         <Layout>
             <div className="container">
-                <div class="columns is-mobile is-centered">
-                    <div class="column is-half">
-                        <p class="bd-notification is-primary">
-                            <code class="html">is-half</code><br />
-                        </p>
+                <section class="section">
+                    <div class="columns is-mobile is-centered">
+                        <div class="column is-half">
+                            <p class="bd-notification is-primary">
+                                <code class="html">is-half</code><br />
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </section>
                 <section className="section columns">
+<<<<<<< HEAD
                     <div className="column is-one-third animated fadeInLeftBig">
                         left
                     </div>
                     <div className="column is-one-third animated fadeInUp">
                         Canter
+=======
+                    <div className="column is-two-thirds">
+
+>>>>>>> 15dd4bef4746650ad5cfe0e3f1e34ec968c4f855
                     </div>
                     <div className="column is-one-third animated fadeInRightBig">
                         <form netlify>

@@ -23,6 +23,7 @@ const TemplateWrapper = ({ children }) => (
         integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
         crossorigin="anonymous"
       />
+      <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/lux/bulmaswatch.min.css" />
     </Helmet>
   
     <div id="outer-container">

@@ -41,17 +41,6 @@ const Footer = () => {
           <hr />
           <div className="columns is-mobile">
             <div className="column is-one-third">Contact Me...</div>
-            <div className="column is-one-third">
-              <address class="vcard">
-                <div class="adr">
-                  <div class="street-address"></div>
-                  <div class="locality">California, Maryland</div >
-                  <div class="postal-code">20619</div >
-                  <div class="country-name">United States</div >
-                </div>
-                <div class="tel">Tel: <Obfuscate tel="603-326-8667" /></div>
-              </address>
-            </div>
             <div className="column is-one-third has-text-centered">
               <p>
                 <strong>Digital Resume</strong> by{" "}
@@ -74,6 +63,18 @@ const Footer = () => {
                   </a>.
                   </p>
               </div>
+            </div>
+            <div className="column is-one-third">
+              <address class="vcard">
+                <div class="adr">
+                  <div class="street-address"></div>
+                  <div class="locality">California, Maryland</div >
+                  <div class="postal-code">20619</div >
+                  <div class="country-name">United States</div >
+                </div>
+                <div class="tel">Tel: <Obfuscate tel="603-326-8667" /></div>
+              </address>
+              <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me an espresso', '#46a9b8', 'E1E4LU0A');kofiwidget2.draw();</script> 
             </div>
           </div>
         </div>
