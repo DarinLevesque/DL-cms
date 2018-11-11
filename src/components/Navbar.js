@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { pushRotate as Menu } from "react-burger-menu"
+import {Link} from 'gatsby'
+import {pushRotate as Menu} from "react-burger-menu"
 
 const styles = {
   bmBurgerButton: {
@@ -49,12 +49,12 @@ class Navbar extends React.Component {
   // This keeps state in sync with the opening/closing of the menu via the default
   // means, e.g. clicking the X, pressing the ESC key etc.
   handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen });
+    this.setState({menuOpen: state.isOpen});
   }
 
   // This can be used to close the menu, e.g. when a user clicks a menu item
   closeMenu() {
-    this.setState({ menuOpen: false });
+    this.setState({menuOpen: false});
   }
 
   // This can be used to toggle the menu, e.g. when using a custom icon Tip: You
@@ -65,7 +65,6 @@ class Navbar extends React.Component {
       menuOpen: !this.state.menuOpen
     });
   }
-
 
   render() {
     return (
@@ -79,77 +78,80 @@ class Navbar extends React.Component {
           onStateChange={state => this.handleStateChange(state)}>
           <aside className="menu">
             <Link id="home" to="/" onClick={() => this.closeMenu()}>
-              <i className="fas fa-home" />{" "}
+              <i className="fas fa-home"/>{" "}
             </Link>
             <p className="menu-label">General</p>
             <ul className="menu-list">
               <li>
                 <Link id="about" to="/about" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-user" />
-                  <span> About Me</span>
-                  </Link>
+                  <i className="fas fa-user"/>
+                  <span>
+                    About Me</span>
+                </Link>
               </li>
               <li>
                 <Link to="/projects" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-cogs" />{" "}
-                  <span> Projects</span>
-                  </Link>
+                  <i className="fas fa-cogs"/>{" "}
+                  <span>
+                    Projects</span>
+                </Link>
               </li>
             </ul>
             <Link to="/blog" className="menu-label" onClick={() => this.closeMenu()}>
               Blog
-              </Link>
+            </Link>
             <ul className="menu-list">
               <li>
                 <Link to="/" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-fighter-jet" />{" "}
-                  <span> Professional</span>
-                  </Link>
+                  <i className="fas fa-fighter-jet"/>{" "}
+                  <span>
+                    Professional</span>
+                </Link>
               </li>
               <li>
                 <Link to="/" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-users" />{" "}
-                  <span> Family</span>
-                  </Link>
-              </li>
-              <li>
-                <Link to="/" onClick={() => this.closeMenu()}>
-                  Invitations
-                  </Link>
+                  <i className="fas fa-users"/>{" "}
+                  <span>
+                    Family</span>
+                </Link>
               </li>
             </ul>
             <Link to="/resume" className="menu-label">Resume</Link>
             <ul className="menu-list">
               <li>
                 <Link to="/resume/education" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-graduation-cap" />{" "}
-                  <span> Education</span>
-                  </Link>
+                  <i className="fas fa-graduation-cap"/>{" "}
+                  <span>
+                    Education</span>
+                </Link>
               </li>
               <li>
                 <Link to="/resume/experience" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-briefcase" />{" "}
-                  <span> Experience</span>
-                  </Link>
+                  <i className="fas fa-briefcase"/>{" "}
+                  <span>
+                    Experience</span>
+                </Link>
               </li>
               <li>
                 <Link to="/" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-chart-line" />{" "}
-                  <span> Skills</span>
-                  </Link>
+                  <i className="fas fa-chart-line"/>{" "}
+                  <span>
+                    Skills</span>
+                </Link>
               </li>
             </ul>
             <ul className="menu-list">
               <li>
                 <Link id="contact" to="/contact" onClick={() => this.closeMenu()}>
-                  <i className="fas fa-envelope" />{" "}
-                  <span> Contact</span>
-                  </Link>
+                  <i className="fas fa-envelope"/>{" "}
+                  <span>
+                    Contact</span>
+                </Link>
               </li>
             </ul>
             <footer className="footer has-background-grey-lighter">
               <div className="content has-text-centered">
-                <i className="fas fa-download" />{" "}
+                <i className="fas fa-download"/>{" "}
                 <h6>Resume</h6>
               </div>
             </footer>
@@ -159,6 +161,5 @@ class Navbar extends React.Component {
     );
   }
 }
-
 
 export default Navbar
