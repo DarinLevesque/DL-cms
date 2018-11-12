@@ -1,149 +1,58 @@
 import React from "react";
 import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
-//import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component'
-import styles from './react-vertical-timeline-component-style.module.css'
 import WorkIcon from '../../components/WorkIcon'
 import SchoolIcon from '../../components/SchoolIcon'
 import StarIcon from '../../components/StarIcon'
 
 console.log(styles)
 const Experience = () => {
-    return (
-        <Layout>
-            <section className="section columns">
-                <div className="column">
-                    <p>Test Resource Manager for NAVAIR hired <TimeAgo date="Sep 30, 2015" /></p>
-                </div>
-            </section>
-                <div class="timeline is-centered">
-                  <header class="timeline-header">
-                    <span class="tag is-medium is-primary">Start</span>
-                  </header>
-                  <div class="timeline-item is-primary">
-                    <div class="timeline-marker is-primary"></div>
-                    <div class="timeline-content">
-                      <p class="heading">January 2016</p>
-                      <p>Timeline content - Can include any HTML element</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item is-warning">
-                    <div class="timeline-marker is-warning is-image is-32x32">
-                      <img src="http://bulma.io/images/placeholders/32x32.png" />
-                    </div>
-                    <div class="timeline-content">
-                      <p class="heading">February 2016</p>
-                      <p>Timeline content - Can include any HTML element</p>
-                    </div>
-                  </div>
-                  <header class="timeline-header">
-                    <span class="tag is-primary">2017</span>
-                  </header>
-                  <div class="timeline-item is-danger">
-                    <div class="timeline-marker is-danger is-icon">
-                      <i class="fa fa-flag"></i>
-                    </div>
-                    <div class="timeline-content">
-                      <p class="heading">March 2017</p>
-                      <p>Timeline content - Can include any HTML element</p>
-                    </div>
-                  </div>
-                  <header class="timeline-header">
-                    <span class="tag is-medium is-primary">End</span>
-                  </header>
-                </div>
-        {/*<VerticalTimeline styles={styles}>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2011 - present"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2010 - 2011"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Art Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2008 - 2010"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                <p>
-                  User Experience, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                date="2006 - 2008"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<WorkIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                  User Experience, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="April 2013"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<SchoolIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                <p>
-                  Strategy, Social Media
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="November 2012"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<SchoolIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                date="2002 - 2006"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<SchoolIcon />}
-              >
-                <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                <p>
-                  Creative Direction, Visual Design
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                icon={<StarIcon />}
-              />
-            </VerticalTimeline>*/}
-        </Layout>
-    );
+  return (
+    <Layout>
+      <section className="section columns">
+        <div className="column">
+          <p>Test Resource Manager for NAVAIR hired
+            <TimeAgo date="Sep 30, 2015"/></p>
+        </div>
+      </section>
+      <div className="timeline is-centered">
+        <header className="timeline-header">
+          <span className="tag is-medium is-primary">Start</span>
+        </header>
+        <div className="timeline-item is-primary">
+          <div className="timeline-marker is-primary"></div>
+          <div className="timeline-content">
+            <p className="heading">January 2016</p>
+            <p>Timeline content - Can include any HTML element</p>
+          </div>
+        </div>
+        <div className="timeline-item is-warning">
+          <div className="timeline-marker is-warning is-image is-32x32">
+            <img src="http://bulma.io/images/placeholders/32x32.png"/>
+          </div>
+          <div className="timeline-content">
+            <p className="heading">February 2016</p>
+            <p>Timeline content - Can include any HTML element</p>
+          </div>
+        </div>
+        <header className="timeline-header">
+          <span className="tag is-primary">2017</span>
+        </header>
+        <div className="timeline-item is-danger">
+          <div className="timeline-marker is-danger is-icon">
+            <i className="fa fa-flag"></i>
+          </div>
+          <div className="timeline-content">
+            <p className="heading">March 2017</p>
+            <p>Timeline content - Can include any HTML element</p>
+          </div>
+        </div>
+        <header className="timeline-header">
+          <span className="tag is-medium is-primary">End</span>
+        </header>
+      </div>
+    </Layout>
+  );
 };
 
 export default Experience
