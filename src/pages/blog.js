@@ -27,9 +27,9 @@ export default class BlogPage extends React.Component {
                       <Link className="has-text-primary" to={post.fields.slug}>
                          {post.frontmatter.title}
                       </Link>
-                    </h3>
-                    <h5 class="subtitle is-5 is-pulled-right">
-                      <TimeAgo date={post.frontmatter.date} />
+                    </h3><span class="subtitle is-5 is-pulled-right"><TimeAgo date={post.frontmatter.date} /></span>
+                    <h5 class="subtitle is-5">
+                      {post.frontmatter.date}
                     </h5>
                     <p>
                       {post.excerpt}
