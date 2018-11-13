@@ -1,34 +1,11 @@
 import React from "react";
 import Layout from '../../components/Layout'
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-const Resume = () => {
-    return (
-        <Layout>
-            <section className="section columns">
-                <div className="column">
-
-                </div>
-            </section>
-        </Layout>
-    );
-};
-
-export default Resume
-=======
-function openTab(evt, tabName) {
-    var i, x, tablinks;
-    x = document.getElementsByClassName("content-tab");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-=======
 function openTab(evt, tabTitle) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
->>>>>>> 056720f8c21ca30a36f938e79734a2524a97081a
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
@@ -71,20 +48,11 @@ export default class ResumePage extends React.Component {
                           </a>
                           </li>
                         </ul>
-                        <!--/tabs is-centered-->
                       </div>
                 </div>
-<<<<<<< HEAD
-            </Layout>
-        )
-    }
-}
->>>>>>> 15dd4bef4746650ad5cfe0e3f1e34ec968c4f855
-=======
             </section>
         </Layout>
     );
 };
 
 export default ResumePage
->>>>>>> 056720f8c21ca30a36f938e79734a2524a97081a
