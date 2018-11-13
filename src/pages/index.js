@@ -6,7 +6,8 @@ import Layout from '../components/Layout'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
-const styles = {.cd - headline.rotate - 1. cd - words - wrapper {
+const styles = {
+    cd - headline.rotate - 1. cd - words - wrapper {
     display: inline - block;
     perspective: 300 px;
   }.cd - headline.rotate - 1 b {
