@@ -6,70 +6,10 @@ import Layout from '../components/Layout'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
-const styles = {
-    cd - headline.rotate - 1. cd - words - wrapper {
-    display: inline - block;
-    perspective: 300 px;
-  }.cd - headline.rotate - 1 b {
-    opacity: 0;
-    transform - origin: 50 % 100 %;
-    transform: rotateX(180 deg);
-    display: inline - block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  cd - headline.rotate - 1 b.is - visible {
-    position: relative;
-    opacity: 1;
-    transform: rotateX(0 deg);
-    animation: cd - rotate - 1 - in 1.2 s;
-  }.cd - headline.rotate - 1 b.is - hidden {
-    transform: rotateX(180 deg);
-    animation: cd - rotate - 1 - out 1.2 s;
-  }
-  @keyframes cd - rotate - 1 - in {
-    0 % {
-      transform: rotateX(180 deg);
-      opacity: 0;
-    }
-    35 % {
-      transform: rotateX(120 deg);
-      opacity: 0;
-    }
-    65 % {
-      opacity: 0;
-    }
-    100 % {
-      transform: rotateX(360 deg);
-      opacity: 1;
-    }
-  }
-
-  @keyframes cd - rotate - 1 - out {
-    0 % {
-      transform: rotateX(0 deg);
-      opacity: 1;
-    }
-    35 % {
-      transform: rotateX(-40 deg);
-      opacity: 1;
-    }
-    65 % {
-      opacity: 0;
-    }
-    100 % {
-      transform: rotateX(180 deg);
-      opacity: 0;
-    }
-  }
-}
-
 export default class IndexPage extends React.Component {
   render() {
     return (
-      <Layout styles={styles}>
+      <Layout>
         <section class="cd-intro">
           <h1 class="cd-headline rotate-1">
             <span>My favourite food is</span>
