@@ -20,6 +20,7 @@ const Contact = () => {
                     </div>
                     <div className="column is-one-third animated fadeInUp">
                         Canter
+                    </div>
                     <div className="column is-two-thirds">
 
                     </div>
