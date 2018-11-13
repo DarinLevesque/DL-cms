@@ -110,3 +110,6 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
       </Layout>
+    )
+  }
+}
