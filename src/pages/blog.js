@@ -38,7 +38,7 @@ export default class BlogPage extends React.Component {
                       {post.excerpt}
                       <br />
                       <br />
-                      <Link className="button is-small" to={post.fields.slug}>
+                      <Link className="button is-small is-pulled-right" to={post.fields.slug}>
                         Keep Reading →
                       </Link>
                     </p>
