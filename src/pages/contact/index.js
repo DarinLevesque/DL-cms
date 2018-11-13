@@ -15,16 +15,13 @@ const Contact = () => {
                     </div>
                 </section>
                 <section className="section columns">
-<<<<<<< HEAD
                     <div className="column is-one-third animated fadeInLeftBig">
                         left
                     </div>
                     <div className="column is-one-third animated fadeInUp">
                         Canter
-=======
                     <div className="column is-two-thirds">
 
->>>>>>> 15dd4bef4746650ad5cfe0e3f1e34ec968c4f855
                     </div>
                     <div className="column is-one-third animated fadeInRightBig">
                         <form netlify>
