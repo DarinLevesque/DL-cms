@@ -5,7 +5,6 @@ import WorkIcon from '../../components/WorkIcon'
 import SchoolIcon from '../../components/SchoolIcon'
 import StarIcon from '../../components/StarIcon'
 
-console.log(styles)
 const Experience = () => {
   return (
     <Layout>
