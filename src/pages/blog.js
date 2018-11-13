@@ -23,11 +23,14 @@ export default class BlogPage extends React.Component {
                     style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                     key={post.id}
                   >
+                    <span class="subtitle is-5 is-pulled-right">
+                      <TimeAgo date={post.frontmatter.date} />
+                    </span>
                     <h3 class="title is-3">
                       <Link className="has-text-primary" to={post.fields.slug}>
                          {post.frontmatter.title}
                       </Link>
-                    </h3><span class="subtitle is-5 is-pulled-right"><TimeAgo date={post.frontmatter.date} /></span>
+                    </h3>
                     <h5 class="subtitle is-5">
                       {post.frontmatter.date}
                     </h5>
