@@ -10,16 +10,6 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <section class="cd-intro">
-          <h1 class="cd-headline rotate-1">
-            <span>My favourite food is</span>
-            <span class="cd-words-wrapper">
-              <b class="is-visible">pizza</b>
-              <b>sushi</b>
-              <b>steak</b>
-            </span>
-          </h1>
-        </section>
         <section className="hero is-medium is-dark is-bold">
           <div className="hero-body">
             <div className="container">
