@@ -1,8 +1,7 @@
-import React from 'react' <<<<<<< HEAD
+import React from 'react' 
 import {Link} from 'gatsby'
-import {pushRotate as Menu} from "react-burger-menu" ======= import {Link} from 'gatsby'
 import {pushRotate as Menu} from "react-burger-menu"
-import {OutboundLink} from 'gatsby-plugin-google-analytics' >>>>>>> 15 dd4bef4746650ad5cfe0e3f1e34ec968c4f855
+import {OutboundLink} from 'gatsby-plugin-google-analytics'
 
 const styles = {
   bmBurgerButton: {
