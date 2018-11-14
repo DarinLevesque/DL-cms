@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Headroom from "react-headroom";
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import logo from "../img/dl6.png";
+import logo from "../img/DL.png";
 
 const Header = () => {
   return (
