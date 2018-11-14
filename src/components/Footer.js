@@ -40,7 +40,16 @@ const Footer = () => {
           </nav>
           <hr/>
           <div className="columns is-mobile">
-            <div className="column is-one-third">Contact Me...</div>
+            <div className="column is-one-third">Contact Me...
+              <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me an espresso', '#46a9b8', 'E1E4LU0A');kofiwidget2.draw();</script> 
+              <a href="https://bulma.io">
+                <img
+                  src="https://bulma.io/images/made-with-bulma--dark.png"
+                  alt="Made with Bulma"
+                  width="128"
+                  height="24"/>
+              </a>
+             </div>
             <div className="column is-one-third has-text-centered">
               <p>
                 <strong>Digital Resume</strong>
@@ -77,18 +86,6 @@ const Footer = () => {
                   <Obfuscate tel="603-326-8667"/>
                 </div>
               </address>
-              <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-              <script type='text/javascript'>
-                kofiwidget2.init('Buy me a coffee', '#46b798', 'E1E4LU0A');
-                kofiwidget2.draw();
-              </script>
-              <a href="https://bulma.io">
-                <img
-                  src="https://bulma.io/images/made-with-bulma--dark.png"
-                  alt="Made with Bulma"
-                  width="128"
-                  height="24"/>
-              </a>
             </div>
           </div>
         </div>
