@@ -26,12 +26,12 @@ export default class BlogPage extends React.Component {
                     <span class="subtitle is-5 is-pulled-right">
                       <TimeAgo date={post.frontmatter.date} />
                     </span>
-                    <h3 class="title is-3">
+                    <h4 class="title is-4">
                       <Link className="has-text-primary" to={post.fields.slug}>
                          {post.frontmatter.title}
                       </Link>
                     </h3>
-                    <h5 class="subtitle is-5">
+                    <h6 class="subtitle is-6">
                       {post.frontmatter.date}
                     </h5>
                     <p>
