@@ -2,10 +2,14 @@ import React from "react";
 import Link from "gatsby-link";
 import Obfuscate from 'react-obfuscate'
 import {OutboundLink} from "gatsby-plugin-google-analytics";
+import Helmet from 'react-helmet'
 
 const Footer = () => {
   return (
     <footer className="footer">
+      <Helmet>
+        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+      </Helmet>
       <div className="container">
         <div className="content">
           <nav className="level is-mobile">
@@ -41,7 +45,7 @@ const Footer = () => {
           <hr/>
           <div className="columns is-mobile">
             <div className="column is-one-third">Contact Me...
-              <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me an espresso', '#46a9b8', 'E1E4LU0A');kofiwidget2.draw();</script> 
+              <script type='text/javascript'>kofiwidget2.init('Buy me an espresso', '#46a9b8', 'E1E4LU0A');kofiwidget2.draw();</script> 
               <a href="https://bulma.io">
                 <img
                   src="https://bulma.io/images/made-with-bulma--dark.png"
