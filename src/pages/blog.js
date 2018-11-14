@@ -49,7 +49,7 @@ export default class BlogPage extends React.Component {
                 .map(({ node: post }) => (
                   <div
                     className="content column is-4"
-                    style={{ padding: '25px' }}
+                    style={{ padding: '10px' }}
                     key={post.id}
                   >
                     <div className="card">
