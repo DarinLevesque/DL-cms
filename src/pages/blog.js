@@ -44,6 +44,35 @@ export default class BlogPage extends React.Component {
                     </p>
                   </div>
                 ))}
+            {posts
+              .map(({ node: post }) => (
+                <div className="card" key={post.id}>
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <p class="title is-4">
+                      <Link className="has-text-primary" to={post.fields.slug}>
+                         {post.frontmatter.title}
+                      </Link>
+                    </p>
+                    <p class="subtitle is-6">{post.frontmatter.date}</p>
+
+                    <div class="content">
+                      {post.excerpt}
+                      <br>
+                      <span class="subtitle is-5 is-pulled-right">
+                        <TimeAgo date={post.frontmatter.date} />
+                      </span>
+                    </div>
+                    <footer class="card-footer">
+                      <Link to={post.fields.slug} class="card-footer-item">Keep Reading →</Link>
+                    </footer>
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
       </Layout>
