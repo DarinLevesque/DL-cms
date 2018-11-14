@@ -16,35 +16,7 @@ export default class BlogPage extends React.Component {
               <div className="content">
                 <h1 className="has-text-weight-bold is-size-2">Latest Articles</h1>
               </div>
-              {posts
-                .map(({ node: post }) => (
-                  <div
-                    className="content"
-                    style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                    key={post.id}
-                  >
-                    <span class="subtitle is-5 is-pulled-right">
-                      <TimeAgo date={post.frontmatter.date} />
-                    </span>
-                    <h4 class="title is-4">
-                      <Link className="has-text-primary" to={post.fields.slug}>
-                         {post.frontmatter.title}
-                      </Link>
-                    </h4>
-                    <h6 class="subtitle is-6">
-                      {post.frontmatter.date}
-                    </h6>
-                    <p>
-                      {post.excerpt}
-                      <br />
-                      <br />
-                      <Link className="button is-small is-pulled-right" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
-                    </p>
-                  </div>
-                ))}
-            <div className="columns">
+              <div className="columns">
               {posts
                 .map(({ node: post }) => (
                   <div
@@ -81,6 +53,34 @@ export default class BlogPage extends React.Component {
                   </div>
                 ))}
               </div>
+              {posts
+                .map(({ node: post }) => (
+                  <div
+                    className="content"
+                    style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                    key={post.id}
+                  >
+                    <span class="subtitle is-5 is-pulled-right">
+                      <TimeAgo date={post.frontmatter.date} />
+                    </span>
+                    <h4 class="title is-4">
+                      <Link className="has-text-primary" to={post.fields.slug}>
+                         {post.frontmatter.title}
+                      </Link>
+                    </h4>
+                    <h6 class="subtitle is-6">
+                      {post.frontmatter.date}
+                    </h6>
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button is-small is-pulled-right" to={post.fields.slug}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
+                ))}
             </div>
           </section>
       </Layout>
