@@ -72,10 +72,10 @@ export default class BlogPage extends React.Component {
                           <TimeAgo date={post.frontmatter.date} />
                         </span>
                       </div>
-                      <footer className="card-footer">
-                        <Link to={post.fields.slug} class="card-footer-item">Keep Reading →</Link>
-                      </footer>
                     </div>
+                    <footer className="card-footer">
+                      <Link to={post.fields.slug} class="card-footer-item">Keep Reading →</Link>
+                    </footer>
                   </div>
                 ))}
               </div>
