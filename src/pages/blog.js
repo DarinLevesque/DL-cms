@@ -30,10 +30,10 @@ export default class BlogPage extends React.Component {
                       <Link className="has-text-primary" to={post.fields.slug}>
                          {post.frontmatter.title}
                       </Link>
-                    </h3>
+                    </h4>
                     <h6 class="subtitle is-6">
                       {post.frontmatter.date}
-                    </h5>
+                    </h6>
                     <p>
                       {post.excerpt}
                       <br />
