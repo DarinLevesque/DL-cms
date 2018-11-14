@@ -44,35 +44,37 @@ export default class BlogPage extends React.Component {
                     </p>
                   </div>
                 ))}
-            {posts
-              .map(({ node: post }) => (
-                <div className="card column is-4" key={post.id}>
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <p className="title is-4">
-                      <Link className="has-text-primary" to={post.fields.slug}>
-                         {post.frontmatter.title}
-                      </Link>
-                    </p>
-                    <p className="subtitle is-6">{post.frontmatter.date}</p>
-
-                    <div className="content">
-                      {post.excerpt}
-                      <br />
-                      <span className="subtitle is-5 is-pulled-right">
-                        <TimeAgo date={post.frontmatter.date} />
-                      </span>
+            <div className="columns">
+              {posts
+                .map(({ node: post }) => (
+                  <div className="card column is-4" key={post.id}>
+                    <div className="card-image">
+                      <figure className="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                      </figure>
                     </div>
-                    <footer className="card-footer">
-                      <Link to={post.fields.slug} class="card-footer-item">Keep Reading →</Link>
-                    </footer>
+                    <div className="card-content">
+                      <p className="title is-4">
+                        <Link className="has-text-primary" to={post.fields.slug}>
+                           {post.frontmatter.title}
+                        </Link>
+                      </p>
+                      <p className="subtitle is-6">{post.frontmatter.date}</p>
+
+                      <div className="content">
+                        {post.excerpt}
+                        <br />
+                        <span className="subtitle is-5 is-pulled-right">
+                          <TimeAgo date={post.frontmatter.date} />
+                        </span>
+                      </div>
+                      <footer className="card-footer">
+                        <Link to={post.fields.slug} class="card-footer-item">Keep Reading →</Link>
+                      </footer>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </section>
       </Layout>
