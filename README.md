@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/DarinLevesque/DL-cms.svg?style=svg)](https://circleci.com/gh/DarinLevesque/DL-cms)
+[![CircleCI](https://circleci.com/gh/DarinLevesque/DL-cms.svg?style=svg)](https://circleci.com/gh/DarinLevesque/DL-cms)[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/E1E4LU0A)
 
 # Darin Levesque Blog
 
