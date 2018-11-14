@@ -181,7 +181,7 @@ class Navbar extends React.Component {
                 </Link>
               </li>
             </ul>
-            <div className="level">
+            <div className="level is-mobile">
               <span className="tooltip level-item" data-tooltip="Download Resume">
                 <i className="fas fa-lg fa-download"/>
               </span>
