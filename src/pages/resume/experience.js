@@ -27,7 +27,7 @@ const Experience = () => {
         </div>
         <div className="timeline-item is-warning">
           <div className="timeline-marker is-warning is-image is-32x32">
-            <img src="http://bulma.io/images/placeholders/32x32.png"/>
+            <img src="https://bulma.io/images/placeholders/32x32.png"/>
           </div>
           <div className="timeline-content">
             <p className="heading">February 2016</p>
