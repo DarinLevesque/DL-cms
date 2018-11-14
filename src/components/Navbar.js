@@ -182,12 +182,12 @@ class Navbar extends React.Component {
               </li>
             </ul>
             <div className="level">
-              <span className="tooltip" data-tooltip="Download Resume">
+              <span className="tooltip level-item" data-tooltip="Download Resume">
                 <i className="fas fa-lg fa-download"/>
               </span>
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms"
-                className="navbar-item">
+                className="level-item">
                 <button class="button tooltip" data-tooltip="Github Repository">
                   <i className="fab fa-lg fa-github"/>
                 </button>
