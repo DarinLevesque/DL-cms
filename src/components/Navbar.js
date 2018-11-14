@@ -117,7 +117,7 @@ class Navbar extends React.Component {
               activeClassName="is-active">
               Blog
             </Link>
-            <ul className="menu-list">
+            <ul className="menu-list animated fadeIn fadeOut">
               <li>
                 <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
                   <i className="fas fa-fighter-jet"/>{" "}
