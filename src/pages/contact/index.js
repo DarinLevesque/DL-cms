@@ -5,14 +5,12 @@ const Contact = () => {
     return (
         <Layout>
             <div className="container">
-                <section class="section">
-                    <div class="columns is-mobile is-centered">
-                        <div class="column is-half">
-                            <p class="bd-notification is-primary">
-                                <code class="html">is-half</code><br />
-                            </p>
-                        </div>
-                    </div>
+                <section className="section">
+                  <div className="container">
+                    <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                      Contact Me
+                    </h2>
+                  </div>
                 </section>
                 <section className="section columns">
                     <div className="column is-two-thirds">
