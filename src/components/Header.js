@@ -61,7 +61,7 @@ const Header = () => {
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
                 <span className="tooltip is-tooltip-bottom" data-tooltip="Github Repository">
-                  <i className="fab fa-github fa-lg fa-inverse"/>
+                  <i className="fab fa-github fa-lg fa-inverse" />
                 </span>
               </OutboundLink>
             </div>

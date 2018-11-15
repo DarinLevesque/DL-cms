@@ -1,7 +1,7 @@
-import React from 'react' 
-import {Link} from 'gatsby'
-import {pushRotate as Menu} from "react-burger-menu"
-import {OutboundLink} from 'gatsby-plugin-google-analytics'
+import React from 'react'
+import { Link } from 'gatsby'
+import { pushRotate as Menu } from "react-burger-menu"
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const styles = {
   bmBurgerButton: {
@@ -50,12 +50,12 @@ class Navbar extends React.Component {
   // This keeps state in sync with the opening/closing of the menu via the default
   // means, e.g. clicking the X, pressing the ESC key etc.
   handleStateChange(state) {
-    this.setState({menuOpen: state.isOpen});
+    this.setState({ menuOpen: state.isOpen });
   }
 
   // This can be used to close the menu, e.g. when a user clicks a menu item
   closeMenu() {
-    this.setState({menuOpen: false});
+    this.setState({ menuOpen: false });
   }
 
   // This can be used to toggle the menu, e.g. when using a custom icon Tip: You
@@ -84,7 +84,7 @@ class Navbar extends React.Component {
               to="/"
               onClick={() => this.closeMenu()}
               activeClassName="is-active">
-              <i className="fas fa-home"/>
+              <i className="fas fa-home" />
             </Link>
             <p className="menu-label">General</p>
             <ul className="menu-list">
@@ -94,7 +94,7 @@ class Navbar extends React.Component {
                   to="/about"
                   onClick={() => this.closeMenu()}
                   activeClassName="is-active">
-                  <i className="fas fa-user"/>
+                  <i className="fas fa-user" />
                   <span>
                     About Me</span>
                 </Link>
@@ -104,7 +104,7 @@ class Navbar extends React.Component {
                   to="/projects"
                   onClick={() => this.closeMenu()}
                   activeClassName="is-active">
-                  <i className="fas fa-cogs"/>{" "}
+                  <i className="fas fa-cogs" />{" "}
                   <span>
                     Projects</span>
                 </Link>
@@ -117,17 +117,17 @@ class Navbar extends React.Component {
               activeClassName="is-active">
               Blog
             </Link>
-            <ul className="menu-list animated fadeIn fadeOut">
+            <ul className="menu-list">
               <li>
                 <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
-                  <i className="fas fa-fighter-jet"/>{" "}
+                  <i className="fas fa-fighter-jet" />{" "}
                   <span>
                     Professional</span>
                 </Link>
               </li>
               <li>
                 <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
-                  <i className="fas fa-users"/>{" "}
+                  <i className="fas fa-users" />{" "}
                   <span>
                     Family</span>
                 </Link>
@@ -145,7 +145,7 @@ class Navbar extends React.Component {
                   to="/resume/education"
                   onClick={() => this.closeMenu()}
                   activeClassName="is-active">
-                  <i className="fas fa-graduation-cap"/>{" "}
+                  <i className="fas fa-graduation-cap" />{" "}
                   <span>
                     Education</span>
                 </Link>
@@ -155,14 +155,14 @@ class Navbar extends React.Component {
                   to="/resume/experience"
                   onClick={() => this.closeMenu()}
                   activeClassName="is-active">
-                  <i className="fas fa-briefcase"/>{" "}
+                  <i className="fas fa-briefcase" />{" "}
                   <span>
                     Experience</span>
                 </Link>
               </li>
               <li>
                 <Link to="/" onClick={() => this.closeMenu()} activeClassName="is-active">
-                  <i className="fas fa-chart-line"/>{" "}
+                  <i className="fas fa-chart-line" />{" "}
                   <span>
                     Skills</span>
                 </Link>
@@ -175,7 +175,7 @@ class Navbar extends React.Component {
                   to="/contact"
                   onClick={() => this.closeMenu()}
                   activeClassName="is-active">
-                  <i className="fas fa-envelope"/>{" "}
+                  <i className="fas fa-envelope" />{" "}
                   <span>
                     Contact</span>
                 </Link>
@@ -183,13 +183,13 @@ class Navbar extends React.Component {
             </ul>
             <div className="level is-mobile">
               <span className="tooltip level-item" data-tooltip="Download Resume">
-                <i className="fas fa-lg fa-download"/>
+                <i className="fas fa-lg fa-download" />
               </span>
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms"
                 className="level-item">
                 <button class="button tooltip" data-tooltip="Github Repository">
-                  <i className="fab fa-lg fa-github"/>
+                  <i className="fab fa-lg fa-github" />
                 </button>
               </OutboundLink>
             </div>
