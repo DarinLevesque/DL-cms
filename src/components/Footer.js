@@ -45,7 +45,9 @@ const Footer = () => {
           <hr/>
           <div className="columns is-mobile">
             <div className="column is-one-third">Contact Me...
-              <script type='text/javascript'>kofiwidget2.init('Buy me an espresso', '#46a9b8', 'E1E4LU0A');kofiwidget2.draw();</script> 
+              <br/>
+              <a href='https://ko-fi.com/E1E4LU0A' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> 
+              <br/>          
               <a href="https://bulma.io">
                 <img
                   src="https://bulma.io/images/made-with-bulma--dark.png"
