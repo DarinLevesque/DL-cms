@@ -8,6 +8,23 @@ import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
 export default class IndexPage extends React.Component {
+  
+  componentDidMount() {
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/edit?usp=sharing';
+
+    function init() {
+      Tabletop.init( { key: publicSpreadsheetUrl,
+                       callback: showInfo,
+                       simpleSheet: true } )
+    }
+
+    function showInfo(data, tabletop) {
+      console.log(data)
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+  }
+  
   render() {
     return (
       <Layout>
@@ -27,22 +44,6 @@ export default class IndexPage extends React.Component {
                 <div className="media-content column is-one-half">
                   <h1 className="title">Who am I?</h1>
                   <h2 className="subtitle">
-                    
-                    <script type='text/javascript'>    
-                      var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/edit?usp=sharing';
-
-                      function init() {
-                        Tabletop.init( { key: publicSpreadsheetUrl,
-                                         callback: showInfo,
-                                         simpleSheet: true } )
-                      }
-
-                      function showInfo(data, tabletop) {
-                        console.log(data)
-                      }
-
-                      window.addEventListener('DOMContentLoaded', init)
-                    </script>
                     {/*<Typed
                       strings={["Hi, my name is Darin.", "I'm a Test Resource Manager for NAVAIR"]}
                       startDelay={2500}
