@@ -33,6 +33,9 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
+              <Link to="/portfolio" activeClassName="is-active" className="navbar-item">
+                <i className="fas fa-drafting-compass" /><span>&nbsp;Portfolio</span>
+              </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="/resume" className="navbar-link" activeClassName="is-active">
                   <i className="fas fa-briefcase" />&nbsp;Resume
