@@ -6,7 +6,6 @@ import {OutboundLink} from "gatsby-plugin-google-analytics";
 const Footer = () => {
   return (
     <footer className="footer">
-      
       <div className="container">
         <div className="content">
           <nav className="level is-mobile">
@@ -41,7 +40,8 @@ const Footer = () => {
           </nav>
           <hr/>
           <div className="columns is-mobile">
-            <div className="column is-one-third">Contact Me...
+            <div className="column is-one-third">
+              <p>Contact Me...</p>
               <br/>
               <OutboundLink href='https://ko-fi.com/E1E4LU0A' target='_blank'>
                 <img height='36'
@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="column is-one-third has-text-centered">
               <p>
                 <strong>Digital Resume</strong>
-                by{" "}
+                {" "}by{" "}
                 <Link to="/">Darin Levesque</Link>. The source code is licensed{" "}
                 <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br/>
               </p>
