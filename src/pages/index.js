@@ -7,7 +7,7 @@ import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
 const quote = {
-  $.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/od6/public/values?alt=json", function(data) {
+  $.getJSON("https://spreadsheets.google.com/feeds/list/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/od6/public/values?alt=json-in-script&callback=", function(data) {
     //first row "title" column
     console.log(data.feed.entry[0]['gsx$title']['$t']);
   });
