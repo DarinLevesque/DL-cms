@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="column is-one-third">
               <p>Contact Me...</p>
               <br/>
-              <OutboundLink href='https://ko-fi.com/E1E4LU0A' target='_blank'>
+              <OutboundLink href='https://ko-fi.com/E1E4LU0A'>
                 <img height='36'
                   style='border:0px;height:36px;' 
                   src='https://az743702.vo.msecnd.net/cdn/kofi4.png'
