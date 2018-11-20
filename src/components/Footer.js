@@ -2,14 +2,11 @@ import React from "react";
 import Link from "gatsby-link";
 import Obfuscate from 'react-obfuscate'
 import {OutboundLink} from "gatsby-plugin-google-analytics";
-import Helmet from 'react-helmet'
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <Helmet>
-        <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-      </Helmet>
+      
       <div className="container">
         <div className="content">
           <nav className="level is-mobile">
@@ -46,15 +43,21 @@ const Footer = () => {
           <div className="columns is-mobile">
             <div className="column is-one-third">Contact Me...
               <br/>
-              <a href='https://ko-fi.com/E1E4LU0A' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> 
+              <OutboundLink href='https://ko-fi.com/E1E4LU0A' target='_blank'>
+                <img height='36'
+                  style='border:0px;height:36px;' 
+                  src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0'
+                  border='0'
+                  alt='Buy Me a Coffee' />
+              </OutboundLink>
               <br/>          
-              <a href="https://bulma.io">
+              <OutboundLink href="https://bulma.io">
                 <img
                   src="https://bulma.io/images/made-with-bulma--dark.png"
                   alt="Made with Bulma"
                   width="128"
                   height="24"/>
-              </a>
+              </OutboundLink>
              </div>
             <div className="column is-one-third has-text-centered">
               <p>
@@ -65,18 +68,18 @@ const Footer = () => {
               </p>
               <div className="is-hidden-mobile">
                 <p>
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <OutboundLink rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                     <img
                       alt="Creative Commons License"
                       style={{
                       borderWidth: 0
                     }}
                       src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/>
-                  </a>
+                  </OutboundLink>
                   <br/>This work is licensed under a{" "}
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <OutboundLink rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-                  </a>.
+                  </OutboundLink>.
                 </p>
               </div>
             </div>
