@@ -38,7 +38,6 @@ export default class IndexPage extends React.Component {
                       }
 
                       function showInfo(data, tabletop) {
-                        alert('Successfully processed!'),
                         console.log(data)
                       }
 
