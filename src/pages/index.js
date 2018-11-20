@@ -6,6 +6,14 @@ import Layout from '../components/Layout'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
+const quote = {
+  1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E
+  $.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/od6/public/values?alt=json", function(data) {
+  //first row "title" column
+  console.log(data.feed.entry[0]['gsx$title']['$t']);
+});
+}
+
 export default class IndexPage extends React.Component {
   render() {
     return (
@@ -22,7 +30,7 @@ export default class IndexPage extends React.Component {
                 </figure>
                 <div className="media-content column is-one-half">
                   <h1 className="title">Who am I?</h1>
-                  <h2 className="subtitle">
+                  <h2 className="subtitle">{{ quote }}
                     {/*<Typed
                       strings={["Hi, my name is Darin.", "I'm a Test Resource Manager for NAVAIR"]}
                       startDelay={2500}
