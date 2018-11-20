@@ -1,9 +1,6 @@
 import React from "react";
 import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
-import WorkIcon from '../../components/WorkIcon'
-import SchoolIcon from '../../components/SchoolIcon'
-import StarIcon from '../../components/StarIcon'
 
 const Experience = () => {
   return (
@@ -16,7 +13,7 @@ const Experience = () => {
       </section>
       <div className="timeline is-centered">
         <header className="timeline-header">
-          <span className="tag is-medium is-primary">Start</span>
+          <span className="tag is-medium is-primary">Present</span>
         </header>
         <div className="timeline-item is-primary">
           <div className="timeline-marker is-primary"></div>
@@ -42,12 +39,36 @@ const Experience = () => {
             <i className="fa fa-flag"></i>
           </div>
           <div className="timeline-content">
-            <p className="heading">March 2017</p>
+            <p className="heading">January 2004</p>
             <p>Timeline content - Can include any HTML element</p>
           </div>
         </div>
+    <header className="timeline-header">
+          <span className="tag is-primary">2017</span>
+        </header>
+        <div className="timeline-item is-danger">
+          <div className="timeline-marker is-danger is-icon">
+            <i className="fa fa-flag"></i>
+          </div>
+          <div className="timeline-content">
+            <p className="heading">January 2004</p>
+            <p>Timeline content - Can include any HTML element</p>
+          </div>
+        </div>
+    <header className="timeline-header">
+          <span className="tag is-primary">2017</span>
+        </header>
+        <div className="timeline-item">
+          <div className="timeline-marker is-danger is-icon">
+            <i className="fa fa-flag"></i>
+          </div>
+          <div className="timeline-content">
+            <p className="heading">March 2006</p>
+            <p>Transitioned to V-22 Osprey</p>
+          </div>
+        </div>
         <header className="timeline-header">
-          <span className="tag is-medium is-primary">End</span>
+          <span className="tag is-medium is-primary">2004</span>
         </header>
       </div>
     </Layout>
