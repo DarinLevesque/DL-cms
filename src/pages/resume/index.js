@@ -8,6 +8,7 @@ export default class ResumePage extends React.Component {
   render() {
         return (
             <Layout>
+              <div className="container">
                 <section className="section columns">
                     <div className="column is-4">
                         <div class="card">
@@ -100,6 +101,7 @@ export default class ResumePage extends React.Component {
                         </div>
                     </div>
                 </section>
+              </div>
             </Layout>
         )
     }
