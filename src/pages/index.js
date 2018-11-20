@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Link, graphql} from 'gatsby'
 import Layout from '../components/Layout'
+import Helmet from 'react-helmet'
 //import Typed from '../components/Typed'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
@@ -10,6 +11,9 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+        </Helmet>
         <section className="hero is-medium is-dark is-bold">
           <div className="hero-body">
             <div className="container">
@@ -23,6 +27,23 @@ export default class IndexPage extends React.Component {
                 <div className="media-content column is-one-half">
                   <h1 className="title">Who am I?</h1>
                   <h2 className="subtitle">
+                    
+                    <script type='text/javascript'>    
+                      var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/edit?usp=sharing';
+
+                      function init() {
+                        Tabletop.init( { key: publicSpreadsheetUrl,
+                                         callback: showInfo,
+                                         simpleSheet: true } )
+                      }
+
+                      function showInfo(data, tabletop) {
+                        alert('Successfully processed!')
+                        console.log(data);
+                      }
+
+                      window.addEventListener('DOMContentLoaded', init)
+                    </script>
                     {/*<Typed
                       strings={["Hi, my name is Darin.", "I'm a Test Resource Manager for NAVAIR"]}
                       startDelay={2500}
