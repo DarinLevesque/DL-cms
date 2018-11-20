@@ -1,7 +1,11 @@
 import React from "react";
 import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
+
+// images
 import EGA from '../../img/EGA32x32.png'
+import NAVAIR from '../../img/NAVAIR32x32.png'
+import 53K from '../../img/53K32x32.png'
 
 const Experience = () => {
   return (
@@ -36,20 +40,20 @@ const Experience = () => {
           <span className="tag is-primary">2017</span>
         </header>
         <div className="timeline-item is-danger">
-          <div className="timeline-marker is-danger is-icon">
-            <i className="fa fa-flag"></i>
+          <div className="timeline-marker is-image is-32x32">
+            <img src={EGA}/>
           </div>
           <div className="timeline-content">
             <p className="heading">January 2004</p>
-            <p>Timeline content - Can include any HTML element</p>
+            <p>imeline coTntent - Can include any HTML element</p>
           </div>
         </div>
         <header className="timeline-header">
-          <span className="tag is-primary">2017</span>
+          <span className="tag is-primary">2008</span>
         </header>
         <div className="timeline-item">
-          <div className="timeline-marker is-danger is-icon">
-            <i className="fa fa-flag"></i>
+          <div className="timeline-marker is-image is-32x32">
+            <img src={EGA}/>
           </div>
           <div className="timeline-content">
             <p className="heading">March 2007</p>
@@ -57,8 +61,8 @@ const Experience = () => {
           </div>
         </div>
         <div className="timeline-item">
-          <div className="timeline-marker is-danger is-icon">
-            <i className="fa fa-flag"></i>
+          <div className="timeline-marker is-image is-32x32">
+            <img src={EGA}/>
           </div>
           <div className="timeline-content">
             <p className="heading">Iraq Deployment</p>
@@ -69,8 +73,8 @@ const Experience = () => {
           <span className="tag is-primary">2005</span>
         </header>
         <div className="timeline-item">
-          <div className="timeline-marker is-danger is-icon">
-            <i className="fa fa-flag"></i>
+          <div className="timeline-marker is-image is-32x32">
+            <img src={EGA}/>
           </div>
           <div className="timeline-content">
             <p className="heading">January 2004</p>
