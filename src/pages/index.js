@@ -7,11 +7,10 @@ import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
 const quote = {
-  1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E
   $.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/od6/public/values?alt=json", function(data) {
-  //first row "title" column
-  console.log(data.feed.entry[0]['gsx$title']['$t']);
-});
+    //first row "title" column
+    console.log(data.feed.entry[0]['gsx$title']['$t']);
+  });
 }
 
 export default class IndexPage extends React.Component {
