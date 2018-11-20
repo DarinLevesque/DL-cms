@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from '../../components/Layout'
 import TimeAgo from 'react-timeago'
+import EGA from '../../img/EGA32x32.png'
 
 const Experience = () => {
   return (
@@ -24,7 +25,7 @@ const Experience = () => {
         </div>
         <div className="timeline-item is-warning">
           <div className="timeline-marker is-warning is-image is-32x32">
-            <img src="https://bulma.io/images/placeholders/32x32.png"/>
+            <img src={EGA}/>
           </div>
           <div className="timeline-content">
             <p className="heading">February 2016</p>
@@ -51,8 +52,8 @@ const Experience = () => {
             <i className="fa fa-flag"></i>
           </div>
           <div className="timeline-content">
-            <p className="heading">March 2006</p>
-            <p>Transitioned to V-22 Osprey</p>
+            <p className="heading">March 2007</p>
+            <p>Transitioned to MV-22 Osprey's & stood up VMM-266</p>
           </div>
         </div>
         <div className="timeline-item">
