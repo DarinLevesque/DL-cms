@@ -1,6 +1,8 @@
-[![CircleCI](https://circleci.com/gh/DarinLevesque/DL-cms.svg?style=svg)](https://circleci.com/gh/DarinLevesque/DL-cms)[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/E1E4LU0A)
+[![CircleCI](https://circleci.com/gh/DarinLevesque/DL-cms.svg?style=svg)](https://circleci.com/gh/DarinLevesque/DL-cms)
 
 # Darin Levesque Blog
+
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/E1E4LU0A)
 
 **Note:** Based off of **[Gatsby + Netlify CMS Starter](https://gatsby-netlify-cms.netlify.com/)** and uses the [Gatsby v2 Beta](https://www.gatsbyjs.org/blog/2018-06-16-announcing-gatsby-v2-beta-launch/).
 
