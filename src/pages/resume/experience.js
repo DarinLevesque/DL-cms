@@ -5,7 +5,7 @@ import TimeAgo from 'react-timeago'
 // images
 import EGA from '../../img/EGA32x32.png'
 import NAVAIR from '../../img/NAVAIR32x32.png'
-import 53K from '../../img/53K32x32.png'
+import CH53K from '../../img/53K32x32.png'
 
 const Experience = () => {
   return (
