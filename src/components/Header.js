@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import Headroom from "react-headroom";
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import logo from "../img/dl6.png";
+import logo from "../img/DL.png";
 
 const Header = () => {
   return (
@@ -33,6 +33,9 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
+              <Link to="/portfolio" activeClassName="is-active" className="navbar-item">
+                <i className="fas fa-drafting-compass" /><span>&nbsp;Portfolio</span>
+              </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link to="/resume" className="navbar-link" activeClassName="is-active">
                   <i className="fas fa-briefcase" />&nbsp;Resume
@@ -61,7 +64,7 @@ const Header = () => {
               <OutboundLink
                 href="https://github.com/DarinLevesque/DL-cms" className="navbar-item">
                 <span className="tooltip is-tooltip-bottom" data-tooltip="Github Repository">
-                  <i className="fab fa-github fa-lg fa-inverse"/>
+                  <i className="fab fa-github fa-lg fa-inverse" />
                 </span>
               </OutboundLink>
             </div>

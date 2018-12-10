@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Darin Levesque',
+    title: "Severus Snape",
+    titleTemplate: "%s · The Real Hero",
+    description:
+      "Digital resume, portfolio and blog of Darin Levesque",
+    url: "https://www.darinlevesque.com", // No trailing slash allowed!
+    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@Darinlevesque",
   },
   plugins: [
     'gatsby-plugin-react-helmet',

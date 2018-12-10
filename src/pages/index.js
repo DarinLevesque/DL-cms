@@ -2,83 +2,35 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Link, graphql} from 'gatsby'
 import Layout from '../components/Layout'
+import Helmet from 'react-helmet'
 //import Typed from '../components/Typed'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
 
-const styles = {.cd - headline.rotate - 1. cd - words - wrapper {
-    display: inline - block;
-    perspective: 300 px;
-  }.cd - headline.rotate - 1 b {
-    opacity: 0;
-    transform - origin: 50 % 100 %;
-    transform: rotateX(180 deg);
-    display: inline - block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  cd - headline.rotate - 1 b.is - visible {
-    position: relative;
-    opacity: 1;
-    transform: rotateX(0 deg);
-    animation: cd - rotate - 1 - in 1.2 s;
-  }.cd - headline.rotate - 1 b.is - hidden {
-    transform: rotateX(180 deg);
-    animation: cd - rotate - 1 - out 1.2 s;
-  }
-  @keyframes cd - rotate - 1 - in {
-    0 % {
-      transform: rotateX(180 deg);
-      opacity: 0;
-    }
-    35 % {
-      transform: rotateX(120 deg);
-      opacity: 0;
-    }
-    65 % {
-      opacity: 0;
-    }
-    100 % {
-      transform: rotateX(360 deg);
-      opacity: 1;
-    }
-  }
-
-  @keyframes cd - rotate - 1 - out {
-    0 % {
-      transform: rotateX(0 deg);
-      opacity: 1;
-    }
-    35 % {
-      transform: rotateX(-40 deg);
-      opacity: 1;
-    }
-    65 % {
-      opacity: 0;
-    }
-    100 % {
-      transform: rotateX(180 deg);
-      opacity: 0;
-    }
-  }
-}
-
 export default class IndexPage extends React.Component {
+  
+  componentDidMount() {
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/edit?usp=sharing';
+
+    function init() {
+      Tabletop.init( { key: publicSpreadsheetUrl,
+                       callback: showInfo,
+                       simpleSheet: true } )
+    }
+
+    function showInfo(data, tabletop) {
+      console.log(data)
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+  }
+  
   render() {
     return (
-      <Layout styles={styles}>
-        <section class="cd-intro">
-          <h1 class="cd-headline rotate-1">
-            <span>My favourite food is</span>
-            <span class="cd-words-wrapper">
-              <b class="is-visible">pizza</b>
-              <b>sushi</b>
-              <b>steak</b>
-            </span>
-          </h1>
-        </section>
+      <Layout>
+        <Helmet>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+        </Helmet>
         <section className="hero is-medium is-dark is-bold">
           <div className="hero-body">
             <div className="container">
@@ -169,3 +121,6 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
       </Layout>
+    )
+  }
+}

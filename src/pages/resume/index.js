@@ -1,59 +1,108 @@
 import React from "react";
 import Layout from '../../components/Layout'
 
-function openTab(evt, tabTitle) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabTitle).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
 export default class ResumePage extends React.Component {
+  componentDidMount() {
+    
+  }
   render() {
-    return (
-        <Layout>
-            <section className="section columns">
-                <div className="column">
-                    <div class="tabs is-centered">
-                        <ul>
-                          <li id="tablinks">
-                            <a onclick="openTab(event, 'Overview')">
-                            <span class="icon is-large"><i class="fa fa-2x fa-html5 blue"></i></span>
-                            <span>Overview</span>
-                            </a>
-                          </li>
-                          <li id="tablinks">
-                            <a onclick="openTab(event, 'Details')">
-                            <span class="icon is-large"><i class="fa fa-2x fa-tablet blue"></i></span>
-                            <span>Details</span>
-                          </a>
-                          </li>
-                          <li id="tablinks">
-                            <a onclick="openTab(event, 'Specification')">
-                            <span class="icon is-large"><i class="fa fa-2x fa-file-code-o blue"></i></span>
-                            <span>Specification</span>
-                          </a>
-                          </li>
-                          <li id="tablinks">
-                             <a onclick="openTab(event, 'Reviews')">
-                            <span class="icon is-large"><i class="fa fa-2x fa-cog blue"></i></span>
-                            <span>Reviews</span>
-                          </a>
-                          </li>
-                        </ul>
-                        <!--/tabs is-centered-->
-                      </div>
-                </div>
-            </section>
-        </Layout>
-    );
-};
+        return (
+            <Layout>
+              <div className="container">
+                <section className="section columns">
+                    <div className="column is-4">
+                        <div class="card">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"/>
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-4">John Smith</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                              </div>
+                            </div>
 
-export default ResumePage
+                            <div class="content">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                              <a href="#">#css</a> <a href="#">#responsive</a>
+                              <br/>
+                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div className="column is-4">
+                        <div class="card">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"/>
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-4">John Smith</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                              </div>
+                            </div>
+
+                            <div class="content">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                              <a href="#">#css</a> <a href="#">#responsive</a>
+                              <br/>
+                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div className="column is-4">
+                        <div class="card">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"/>
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-4">John Smith</p>
+                                <p class="subtitle is-6">@johnsmith</p>
+                              </div>
+                            </div>
+
+                            <div class="content">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                              <a href="#">#css</a> <a href="#">#responsive</a>
+                              <br/>
+                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </section>
+              </div>
+            </Layout>
+        )
+    }
+}

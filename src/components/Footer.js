@@ -40,28 +40,39 @@ const Footer = () => {
           </nav>
           <hr/>
           <div className="columns is-mobile">
-            <div className="column is-one-third">Contact Me...</div>
+            <div className="column is-one-third">
+              <p>Contact Me...</p>
+              <br/>
+                  
+              <OutboundLink href="https://bulma.io">
+                <img
+                  src="https://bulma.io/images/made-with-bulma--dark.png"
+                  alt="Made with Bulma"
+                  width="128"
+                  height="24"/>
+              </OutboundLink>
+             </div>
             <div className="column is-one-third has-text-centered">
               <p>
                 <strong>Digital Resume</strong>
-                by{" "}
+                {" "}by{" "}
                 <Link to="/">Darin Levesque</Link>. The source code is licensed{" "}
                 <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br/>
               </p>
               <div className="is-hidden-mobile">
                 <p>
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <OutboundLink rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                     <img
                       alt="Creative Commons License"
                       style={{
                       borderWidth: 0
                     }}
                       src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/>
-                  </a>
+                  </OutboundLink>
                   <br/>This work is licensed under a{" "}
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <OutboundLink rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
-                  </a>.
+                  </OutboundLink>.
                 </p>
               </div>
             </div>
@@ -77,18 +88,6 @@ const Footer = () => {
                   <Obfuscate tel="603-326-8667"/>
                 </div>
               </address>
-              <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-              <script type='text/javascript'>
-                kofiwidget2.init('Buy me a coffee', '#46b798', 'E1E4LU0A');
-                kofiwidget2.draw();
-              </script>
-              <a href="https://bulma.io">
-                <img
-                  src="https://bulma.io/images/made-with-bulma--dark.png"
-                  alt="Made with Bulma"
-                  width="128"
-                  height="24"/>
-              </a>
             </div>
           </div>
         </div>

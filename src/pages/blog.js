@@ -16,6 +16,43 @@ export default class BlogPage extends React.Component {
               <div className="content">
                 <h1 className="has-text-weight-bold is-size-2">Latest Articles</h1>
               </div>
+              <div className="columns">
+              {posts
+                .map(({ node: post }) => (
+                  <div
+                    className="content column is-4"
+                    style={{ padding: '10px' }}
+                    key={post.id}
+                  >
+                    <div className="card animated fadeIn">
+                      <div className="card-image">
+                        <figure className="image is-4by3">
+                          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                        </figure>
+                      </div>
+                      <div className="card-content">
+                        <p className="title is-4">
+                          <Link className="has-text-primary" to={post.fields.slug}>
+                             {post.frontmatter.title}
+                          </Link>
+                        </p>
+                        <p className="subtitle is-6">{post.frontmatter.date}</p>
+
+                        <div className="content">
+                          {post.excerpt}
+                          <br />
+                          <span className="subtitle is-5 is-pulled-right">
+                            <TimeAgo date={post.frontmatter.date} />
+                          </span>
+                        </div>
+                      </div>
+                      <footer className="card-footer">
+                        <Link to={post.fields.slug} class="card-footer-item">Keep Reading →</Link>
+                      </footer>
+                    </div>
+                  </div>
+                ))}
+              </div>
               {posts
                 .map(({ node: post }) => (
                   <div
@@ -23,20 +60,22 @@ export default class BlogPage extends React.Component {
                     style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                     key={post.id}
                   >
-                    <h1 class="title">
+                    <span class="subtitle is-5 is-pulled-right">
+                      <TimeAgo date={post.frontmatter.date} />
+                    </span>
+                    <h4 class="title is-4">
                       <Link className="has-text-primary" to={post.fields.slug}>
                          {post.frontmatter.title}
                       </Link>
-                    </h1>
-                    <span> &bull; </span>
-                    <h2 class="subtitle">
-                      <TimeAgo date={post.frontmatter.date} />
-                    </h2>
+                    </h4>
+                    <h6 class="subtitle is-6">
+                      {post.frontmatter.date}
+                    </h6>
                     <p>
                       {post.excerpt}
                       <br />
                       <br />
-                      <Link className="button is-small" to={post.fields.slug}>
+                      <Link className="button is-small is-pulled-right" to={post.fields.slug}>
                         Keep Reading →
                       </Link>
                     </p>
