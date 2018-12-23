@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="column is-one-third">
               <p>Contact Me...</p>
               <br/>
-                  
+
               <OutboundLink href="https://bulma.io">
                 <img
                   src="https://bulma.io/images/made-with-bulma--dark.png"
@@ -51,7 +51,7 @@ const Footer = () => {
                   width="128"
                   height="24"/>
               </OutboundLink>
-             </div>
+            </div>
             <div className="column is-one-third has-text-centered">
               <p>
                 <strong>Digital Resume</strong>
@@ -61,7 +61,9 @@ const Footer = () => {
               </p>
               <div className="is-hidden-mobile">
                 <p>
-                  <OutboundLink rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <OutboundLink
+                    rel="license"
+                    href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                     <img
                       alt="Creative Commons License"
                       style={{
@@ -70,7 +72,9 @@ const Footer = () => {
                       src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/>
                   </OutboundLink>
                   <br/>This work is licensed under a{" "}
-                  <OutboundLink rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <OutboundLink
+                    rel="license"
+                    href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
                   </OutboundLink>.
                 </p>

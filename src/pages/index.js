@@ -6,32 +6,15 @@ import Helmet from 'react-helmet'
 //import Typed from '../components/Typed'
 import Profile from "../img/Darin.jpg"
 import Checkout from '../components/Checkout'
+import './animated-intro.css'
 
 export default class IndexPage extends React.Component {
-  
-  componentDidMount() {
-    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1R74LZbB7EHqfkEKzk7x7aUYxLTfDIkcIgVe2Hfp_u7E/edit?usp=sharing';
+  componentWillMount() {}
 
-    function init() {
-      Tabletop.init( { key: publicSpreadsheetUrl,
-                       callback: showInfo,
-                       simpleSheet: true } )
-    }
-
-    function showInfo(data, tabletop) {
-      console.log(data)
-    }
-
-    window.addEventListener('DOMContentLoaded', init)
-  }
-  
   render() {
     return (
       <Layout>
-        <Helmet>
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-        </Helmet>
-        <section className="hero is-medium is-dark is-bold">
+        <section className="hero is-medium is-dark is-bold cd-intro">
           <div className="hero-body">
             <div className="container">
               <article className="media columns">
@@ -42,17 +25,17 @@ export default class IndexPage extends React.Component {
                   </p>
                 </figure>
                 <div className="media-content column is-one-half">
-                  <h1 className="title">Who am I?</h1>
-                  <h2 className="subtitle">
-                    {/*<Typed
-                      strings={["Hi, my name is Darin.", "I'm a Test Resource Manager for NAVAIR"]}
-                      startDelay={2500}
-                      nextStringDelay={[2500, 2000]}
-                      lifeLike={true}
-                      cursorChar="_"
-                      breakLines={false}
-                    autoStart={false} />*/}
-                  </h2>
+                  <div className="cd-intro-content mask content">
+                    <h1 data-content="Hi I'm Darin">
+                      <span>Hi, I'm Darin</span>
+                    </h1>
+                    <div className="action-wrapper">
+                      <p>
+                        <Link to="about" className="button is-info is-large">About Me</Link>
+                        <Link to="contact" className="button is-link is-large">Contact Me</Link>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </article>
             </div>
