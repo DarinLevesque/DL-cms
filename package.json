@@ -42,7 +42,7 @@
     "react-timeago": "^4.1.9",
     "react-vertical-timeline-component": "^2.3.1",
     "stripe": "^6.20.0",
-    "typeit": "^5.10.7",
+    "typeit": "^6.0.0",
     "uuid": "^3.3.2"
   },
   "keywords": [
