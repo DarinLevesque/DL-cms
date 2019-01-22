@@ -1,12 +1,14 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import FourOFour from "../img/404.png"
+import "404.css"
 
 const NotFoundPage = () => (
   <Layout>
     <div className="columns">
       <div className="column">
-        <img src={FourOFour} alt="404 error" />
+        <div class="error">404</div>
+        <br /><br />
+        <span class="info">File not found</span>
       </div>
       <div className="column">
         <h1>NOT FOUND</h1>
