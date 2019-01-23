@@ -38,7 +38,7 @@
     "react-dom": "^16.4.1",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
-    "react-obfuscate": "^2.2.1",
+    "react-obfuscate": "^3.0.0",
     "react-timeago": "^4.1.9",
     "react-vertical-timeline-component": "^2.3.1",
     "stripe": "^6.20.0",
