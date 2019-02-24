@@ -6,7 +6,7 @@
   "dependencies": {
     "bulma": "^0.7.2",
     "bulma-badge": "^2.0.0",
-    "bulma-carousel": "^3.0.0",
+    "bulma-carousel": "^4.0.0",
     "bulma-timeline": "^3.0.0",
     "bulma-tooltip": "^2.0.2",
     "gatsby": "^2.0.67",
