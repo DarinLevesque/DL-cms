@@ -19,7 +19,7 @@
     "gatsby-plugin-purgecss": "^2.4.0",
     "gatsby-plugin-react-helmet": "^3.0.1",
     "gatsby-plugin-sass": "^2.0.4",
-    "gatsby-plugin-sharp": "^2.0.12",
+    "gatsby-plugin-sharp": "^2.6.31",
     "gatsby-plugin-stripe": "^1.1.0",
     "gatsby-plugin-stripe-checkout": "^1.1.2",
     "gatsby-remark-images": "^3.0.0",
